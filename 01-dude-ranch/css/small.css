@@ -15,7 +15,7 @@ body {
 
 header {
     color: white;
-    background-color: #F2A249;
+    background-color: #B87C37;
     padding: 1rem 2%;
 }
 
@@ -30,7 +30,7 @@ header h2 {
 /* Navigation */
 
 nav {
-    background-color: #A66821;
+    background-color: #85531B;
 }
 
 nav ul {
@@ -55,7 +55,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #735D45;
+    background-color: #85531B;
 }
 
 /* Main */
@@ -66,7 +66,7 @@ main {
 }
 
 main h1 {
-    color: #F2A249;
+    color: #B87C37;
 }
 
 main figure img {
@@ -89,5 +89,5 @@ footer {
     text-align: center;
     padding: 1rem 2%;
     color: white;
-    background-color: #F2A249;
+    background-color: #B87C37;
 }
