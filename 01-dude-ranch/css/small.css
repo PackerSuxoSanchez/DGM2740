@@ -15,7 +15,7 @@ body {
 
 header {
     color: white;
-    background-color: #17a8e4;
+    background-color: #F2A249;
     padding: 1rem 2%;
 }
 
@@ -30,7 +30,7 @@ header h2 {
 /* Navigation */
 
 nav {
-    background-color: #111;
+    background-color: #A66821;
 }
 
 nav ul {
@@ -43,7 +43,7 @@ nav li {
 }
 
 nav li.active {
-    background-color: #333;
+    background-color: #444;
 }
 
 nav a {
@@ -55,7 +55,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #444;
+    background-color: #735D45;
 }
 
 /* Main */
@@ -66,7 +66,7 @@ main {
 }
 
 main h1 {
-    color: #17a8e4;
+    color: #F2A249;
 }
 
 main figure img {
@@ -89,5 +89,5 @@ footer {
     text-align: center;
     padding: 1rem 2%;
     color: white;
-    background-color: #17a8e4;
+    background-color: #F2A249;
 }
