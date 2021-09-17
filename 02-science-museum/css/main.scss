@@ -1,26 +1,49 @@
 // ----- Variables ----- //
+
 $main-color: #FFFFCC;
 $secondary-color: #195B27;
 $nav-color: #111;
+
+// --- Universal --- //
 
 * {
     margin: 0;
     padding: 0;
 }
 
+// * {
+//     -moz-box-sizing: border-box;
+//     -webkit-box-sizing: border-box;
+//     box-sizing: border-box;
+// }
+
+// html {
+//     -webkit-text-size-adjust: 100%;
+//     -ms-text-size-adjust: 100%;
+// }
+
+
+
 // ----- Body ----- //
 
 body {
     font-family: 'Merriweather', serif;
-    max-width: 1200px;
-    margin: auto;
+    // max-width: 1200px;
+    // margin: auto;
 }
 
 // ----- Header ----- //
 
-header {
+div.header-wrapper {
     background-color: $main-color;
+}
 
+header {
+        // background-color: $main-color;
+        max-width: 1200px;
+        margin: auto;
+
+    // Logo
     img {
         max-width: 75px;
         float: left;
@@ -29,55 +52,144 @@ header {
         padding-left: 1rem;
     }
 
+    @media only screen and (max-width: 600px) {
+        img {
+            max-width: 40px;
+        }
+    }
+
     h1 {
         padding-top: 1rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+        h1 {
+            padding-bottom: 1rem;
+        }
     }
 
     h2 {
         padding-bottom: 1rem;
     }
+
+    @media only screen and (max-width: 600px) {
+        h2 {
+            display: none;
+        }
+    }
 }
 
 // ----- Navigation ----- //
 
+div.nav-wrapper {
+    background-color: $nav-color;
+}
+
+@media only screen and (max-width: 1200px) {
+    div.nav-wrapper {
+        
+    }
+}
+
 nav {
     background-color: $nav-color;
     display: flex;
+    max-width: 1200px;
+    margin: auto;
 
-    ul li {
-        list-style-type: none;
-        text-decoration: none;
-        display: inline-block;
-        
-        &.active {
-            background-color: #333;
-        }
+    ul {
 
-        a {
-            display: block;
-            padding: 1rem 2rem;
-            color: #eee;
-            text-align: center;
+        li {
+            list-style-type: none;
             text-decoration: none;
-
-            &:hover {
-                background-color: #444;
+            display: inline-block;
+            
+            &.active {
+                background-color: #333;
             }
+
+            a {
+                display: block;
+                padding: 1rem 2rem;
+                color: #eee;
+                text-align: center;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: #444;
+                }
+            }    
         }
+    }   
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+
     }
 }
 
 // ----- Main ----- //
 
+// div.main-wrapper {
+//     background-color: ;
+// }
+
+main {
+    max-width: 1200px;
+    margin: auto;
+
+    // Hero Image
+    img {
+        width: 100%;
+
+        &.hero {
+            max-height: 40vh;
+            object-fit: cover;
+        }
+    }
+
+    h1 {
+        margin: 0 1rem 0 1rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    p {
+        margin: 0 1rem 0 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
 figure {
-    // width: 50%;
-    margin: 0 0 0 2%;
+    width: 33%;
+    margin: 0 1rem 1rem 1rem;
     float: right;
 }
 
+@media only screen and (max-width: 1200px) {
+    figure {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    figure {
+        width: 100%;
+    }
+}
+
+
+
 // ----- Footer ----- //
 
+div.footer-wrapper {
+    background-color: $main-color;
+}
+
 footer {
+    max-width: 1200px;
+    margin: auto;
     background-color: $main-color;
     text-align: center;
     padding: 1.5rem 0;

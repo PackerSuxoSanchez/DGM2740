@@ -5,12 +5,15 @@
 
 body {
   font-family: 'Merriweather', serif;
-  max-width: 1200px;
-  margin: auto;
+}
+
+div.header-wrapper {
+  background-color: #FFFFCC;
 }
 
 header {
-  background-color: #FFFFCC;
+  max-width: 1200px;
+  margin: auto;
 }
 
 header img {
@@ -21,17 +24,41 @@ header img {
   padding-left: 1rem;
 }
 
+@media only screen and (max-width: 600px) {
+  header img {
+    max-width: 40px;
+  }
+}
+
 header h1 {
   padding-top: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  header h1 {
+    padding-bottom: 1rem;
+  }
 }
 
 header h2 {
   padding-bottom: 1rem;
 }
 
+@media only screen and (max-width: 600px) {
+  header h2 {
+    display: none;
+  }
+}
+
+div.nav-wrapper {
+  background-color: #111;
+}
+
 nav {
   background-color: #111;
   display: flex;
+  max-width: 1200px;
+  margin: auto;
 }
 
 nav ul li {
@@ -56,12 +83,56 @@ nav ul li a:hover {
   background-color: #444;
 }
 
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+main img {
+  width: 100%;
+}
+
+main img.hero {
+  max-height: 40vh;
+  object-fit: cover;
+}
+
+main h1 {
+  margin: 0 1rem 0 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+main p {
+  margin: 0 1rem 0 1rem;
+  padding-bottom: 1rem;
+}
+
 figure {
-  margin: 0 0 0 2%;
+  width: 33%;
+  margin: 0 1rem 1rem 1rem;
   float: right;
 }
 
+@media only screen and (max-width: 1200px) {
+  figure {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  figure {
+    width: 100%;
+  }
+}
+
+div.footer-wrapper {
+  background-color: #FFFFCC;
+}
+
 footer {
+  max-width: 1200px;
+  margin: auto;
   background-color: #FFFFCC;
   text-align: center;
   padding: 1.5rem 0;
