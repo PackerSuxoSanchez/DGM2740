@@ -1,49 +1,49 @@
-// ----- Variables ----- //
+/* ----- Variables ----- */
 
 $main-color: #FFFFCC;
 $secondary-color: #195B27;
 $nav-color: #111;
 
-// --- Universal --- //
+/* ----- Universal ----- */
 
 * {
     margin: 0;
     padding: 0;
 }
 
-// * {
-//     -moz-box-sizing: border-box;
-//     -webkit-box-sizing: border-box;
-//     box-sizing: border-box;
-// }
+/* 
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
-// html {
-//     -webkit-text-size-adjust: 100%;
-//     -ms-text-size-adjust: 100%;
-// }
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+ */
 
-
-
-// ----- Body ----- //
+/* ----- Body ----- */
 
 body {
     font-family: 'Merriweather', serif;
-    // max-width: 1200px;
-    // margin: auto;
+    /* max-width: 1200px;
+    margin: auto; */
 }
 
-// ----- Header ----- //
+/* ----- Header ----- */
 
 div.header-wrapper {
     background-color: $main-color;
 }
 
 header {
-        // background-color: $main-color;
+        /* background-color: $main-color; */
         max-width: 1200px;
         margin: auto;
 
-    // Logo
+    /* Logo */
     img {
         max-width: 75px;
         float: left;
@@ -79,21 +79,22 @@ header {
     }
 }
 
-// ----- Navigation ----- //
+/* ----- Navigation ----- */
 
 div.nav-wrapper {
     background-color: $nav-color;
 }
-
+/* 
 @media only screen and (max-width: 1200px) {
     div.nav-wrapper {
         
     }
 }
+ */
 
 nav {
     background-color: $nav-color;
-    display: flex;
+    display: block;
     max-width: 1200px;
     margin: auto;
 
@@ -122,24 +123,26 @@ nav {
         }
     }   
 }
-
+/* 
 @media only screen and (max-width: 600px) {
     nav {
-
+        
     }
 }
+ */
+/* ----- Main ----- */
 
-// ----- Main ----- //
-
-// div.main-wrapper {
-//     background-color: ;
-// }
+/* 
+div.main-wrapper {
+    background-color: white;
+}
+ */
 
 main {
     max-width: 1200px;
     margin: auto;
 
-    // Hero Image
+    /* Hero Image */
     img {
         width: 100%;
 
@@ -181,7 +184,7 @@ figure {
 
 
 
-// ----- Footer ----- //
+/* ----- Footer ----- */
 
 div.footer-wrapper {
     background-color: $main-color;
