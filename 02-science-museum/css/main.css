@@ -1,19 +1,39 @@
+/* ----- Variables ----- */
+/* ----- Universal ----- */
 * {
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: 'Merriweather', serif;
+/* 
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+ */
+/* ----- Body ----- */
+body {
+  font-family: 'Merriweather', serif;
+  /* max-width: 1200px;
+    margin: auto; */
+}
+
+/* ----- Header ----- */
 div.header-wrapper {
   background-color: #FFFFCC;
 }
 
 header {
+  /* background-color: $main-color; */
   max-width: 1200px;
   margin: auto;
+  /* Logo */
 }
 
 header img {
@@ -50,13 +70,21 @@ header h2 {
   }
 }
 
+/* ----- Navigation ----- */
 div.nav-wrapper {
   background-color: #111;
 }
 
+/* 
+@media only screen and (max-width: 1200px) {
+    div.nav-wrapper {
+        
+    }
+}
+ */
 nav {
   background-color: #111;
-  display: flex;
+  display: block;
   max-width: 1200px;
   margin: auto;
 }
@@ -64,11 +92,14 @@ nav {
 nav ul li {
   list-style-type: none;
   text-decoration: none;
-  display: inline-block;
 }
 
 nav ul li.active {
   background-color: #333;
+}
+
+nav ul li:hover {
+  background-color: #444;
 }
 
 nav ul li a {
@@ -79,13 +110,32 @@ nav ul li a {
   text-decoration: none;
 }
 
-nav ul li a:hover {
-  background-color: #444;
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  nav ul li {
+    display: inline-flex;
+    width: 25%;
+    float: left;
+    justify-content: space-evenly;
+    background-color: #111;
+  }
 }
 
+@media only screen and (min-width: 1200px) {
+  nav ul {
+    display: flex;
+  }
+}
+
+/* ----- Main ----- */
+/* 
+div.main-wrapper {
+    background-color: white;
+}
+ */
 main {
   max-width: 1200px;
   margin: auto;
+  /* Hero Image */
 }
 
 main img {
@@ -126,6 +176,7 @@ figure {
   }
 }
 
+/* ----- Footer ----- */
 div.footer-wrapper {
   background-color: #FFFFCC;
 }

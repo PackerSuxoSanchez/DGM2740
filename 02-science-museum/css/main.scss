@@ -84,6 +84,7 @@ header {
 div.nav-wrapper {
     background-color: $nav-color;
 }
+
 /* 
 @media only screen and (max-width: 1200px) {
     div.nav-wrapper {
@@ -103,10 +104,13 @@ nav {
         li {
             list-style-type: none;
             text-decoration: none;
-            display: inline-block;
             
             &.active {
                 background-color: #333;
+            }
+
+            &:hover {
+                background-color: #444;
             }
 
             a {
@@ -114,22 +118,24 @@ nav {
                 padding: 1rem 2rem;
                 color: #eee;
                 text-align: center;
-                text-decoration: none;
+                text-decoration: none; 
+            }  
 
-                &:hover {
-                    background-color: #444;
-                }
-            }    
+            @media only screen and (min-width: 601px) and (max-width:1200px) {
+                display: inline-flex;
+                width: 25%;
+                float: left;
+                justify-content: space-evenly;
+                background-color: $nav-color;
+            }
+        }
+
+        @media only screen and (min-width:1200px) {
+            display: flex;
         }
     }   
 }
-/* 
-@media only screen and (max-width: 600px) {
-    nav {
-        
-    }
-}
- */
+
 /* ----- Main ----- */
 
 /* 
