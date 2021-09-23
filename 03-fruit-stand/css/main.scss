@@ -1,0 +1,110 @@
+/* ---------- Variables ---------- */
+
+$main-color: #FF7566;
+$secondary-color: #BF584D; /* Maybe #803B33? */
+$dark-color: #401D1A;
+$light-color: #FCD4CD;
+
+/* ---------- Universal ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- Body ---------- */
+
+body {
+    font-family: 'Inter', sans-serif;
+    max-width: 1140px;
+    margin: auto;
+}
+
+/* ---------- Header ---------- */
+
+header {
+    /* background-color: $main-color; */
+    padding-top: 1.5rem;
+    img {
+        max-height: 100px;
+        float: left;
+        margin-left: 2rem;
+    }
+    h1, h2 {
+        color: $dark-color;
+        margin-right: 2rem;
+        margin-left: 13rem;
+        padding-bottom: .5rem;
+
+        @media only screen and (max-width: 600px) {
+            padding-bottom: 1.5rem;
+        }
+    }
+    h2 {
+        padding-bottom: 1.5rem;
+
+        @media only screen and (max-width: 600px) {
+            display: none;
+        }
+    }
+}
+
+/* ---------- Navigation ---------- */
+
+nav {
+    background-color: $main-color;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+
+        li {
+            list-style-type: none;
+            /* padding-top: .5rem;
+            padding-bottom: .5rem; */
+
+            &.active {
+                background-color: $secondary-color;
+            }
+
+            &:hover {
+                background-color: $dark-color;
+            }
+
+            a {
+                text-decoration: none;
+                color: $dark-color;
+                display: block;
+                text-align: center;
+                padding-top: .5rem;
+                padding-bottom: .5rem;
+
+                &:hover {
+                    color: $light-color;
+                }
+            }
+        }
+    }
+}
+
+/* ---------- Main ---------- */
+
+main {
+    margin: 2rem;
+    color: $dark-color;
+
+    h1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    background: $main-color;
+    color: $dark-color;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}

@@ -1,0 +1,106 @@
+/* ---------- Variables ---------- */
+/* Maybe #803B33? */
+/* ---------- Universal ---------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- Body ---------- */
+body {
+  font-family: 'Inter', sans-serif;
+  max-width: 1140px;
+  margin: auto;
+}
+
+/* ---------- Header ---------- */
+header {
+  /* background-color: $main-color; */
+  padding-top: 1.5rem;
+}
+
+header img {
+  max-height: 100px;
+  float: left;
+  margin-left: 2rem;
+}
+
+header h1, header h2 {
+  color: #401D1A;
+  margin-right: 2rem;
+  margin-left: 13rem;
+  padding-bottom: .5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  header h1, header h2 {
+    padding-bottom: 1.5rem;
+  }
+}
+
+header h2 {
+  padding-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  header h2 {
+    display: none;
+  }
+}
+
+/* ---------- Navigation ---------- */
+nav {
+  background-color: #FF7566;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li {
+  list-style-type: none;
+  /* padding-top: .5rem;
+            padding-bottom: .5rem; */
+}
+
+nav ul li.active {
+  background-color: #BF584D;
+}
+
+nav ul li:hover {
+  background-color: #401D1A;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #401D1A;
+  display: block;
+  text-align: center;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+nav ul li a:hover {
+  color: #FCD4CD;
+}
+
+/* ---------- Main ---------- */
+main {
+  margin: 2rem;
+  color: #401D1A;
+}
+
+main h1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: #FF7566;
+  color: #401D1A;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
