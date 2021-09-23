@@ -53,6 +53,7 @@ header {
 
 nav {
     background-color: $main-color;
+    width: 100%;
 
     ul {
         display: flex;
@@ -83,6 +84,21 @@ nav {
                     color: $light-color;
                 }
             }
+
+            @media only screen and (min-width: 600px) {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 600px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        
+        @media only screen and (min-width: 1140px) {
+            float: left;
+            background-color: $main-color;
         }
     }
 }
@@ -97,6 +113,35 @@ main {
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
+
+    div.images-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        figure {
+            margin-bottom: 1.5rem;
+            text-align: center;
+            margin-left: .5rem;
+            margin-right: .5rem;
+    
+            img {
+                height: 200px;
+                width: 200px;
+                object-fit: cover;
+
+                @media only screen and (min-width:700px) {
+                    height: 250px;
+                    width: 250px;
+                }
+            }
+        }
+
+        @media only screen and (min-width: 700px) {
+            // justify-content: flex-start;
+            align-content: stretch;
+        }
+    } 
 }
 
 /* ---------- Footer ---------- */

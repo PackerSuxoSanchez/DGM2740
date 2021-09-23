@@ -51,6 +51,7 @@ header h2 {
 /* ---------- Navigation ---------- */
 nav {
   background-color: #FF7566;
+  width: 100%;
 }
 
 nav ul {
@@ -85,6 +86,27 @@ nav ul li a:hover {
   color: #FCD4CD;
 }
 
+@media only screen and (min-width: 600px) {
+  nav ul li {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  nav ul {
+    float: left;
+    background-color: #FF7566;
+  }
+}
+
 /* ---------- Main ---------- */
 main {
   margin: 2rem;
@@ -94,6 +116,38 @@ main {
 main h1 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+main div.images-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+main div.images-wrapper figure {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+main div.images-wrapper figure img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 700px) {
+  main div.images-wrapper figure img {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  main div.images-wrapper {
+    align-content: stretch;
+  }
 }
 
 /* ---------- Footer ---------- */
