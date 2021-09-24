@@ -57,6 +57,7 @@ nav {
     ul {
         display: flex;
         flex-direction: column;
+        width: 100%;
 
         li {
             list-style-type: none;
@@ -142,13 +143,16 @@ main {
         }
 
         @media only screen and (min-width: 700px) {
-            // justify-content: flex-start;
-            align-content: stretch;
+            /* justify-content: flex-start; */
         }
-    } 
+    }
 }
 
 /* ---------- Footer ---------- */
+
+div.footer-wrapper {
+    background-color: $main-color;
+}
 
 footer {
     background: $main-color;

@@ -56,6 +56,7 @@ nav {
 nav ul {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 nav ul li {
@@ -152,11 +153,15 @@ main div.images-wrapper figure img {
 
 @media only screen and (min-width: 700px) {
   main div.images-wrapper {
-    align-content: stretch;
+    /* justify-content: flex-start; */
   }
 }
 
 /* ---------- Footer ---------- */
+div.footer-wrapper {
+  background-color: #FF7566;
+}
+
 footer {
   background: #FF7566;
   color: #401D1A;
