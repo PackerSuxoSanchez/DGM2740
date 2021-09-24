@@ -51,7 +51,6 @@ header h2 {
 /* ---------- Navigation ---------- */
 nav {
   background-color: #FF7566;
-  width: 100%;
 }
 
 nav ul {
@@ -89,6 +88,13 @@ nav ul li a:hover {
 @media only screen and (min-width: 600px) {
   nav ul li {
     width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  nav ul li {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
