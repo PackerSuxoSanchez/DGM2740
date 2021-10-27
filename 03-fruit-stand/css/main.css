@@ -15,8 +15,11 @@ body {
 
 /* ---------- Header ---------- */
 header {
+  display: grid;
+  grid-template-columns: 100px auto;
   /* background-color: $main-color; */
-  padding-top: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 header img {
@@ -27,19 +30,19 @@ header img {
 
 header h1, header h2 {
   color: #401D1A;
+  margin-top: 1rem;
   margin-right: 2rem;
-  margin-left: 13rem;
-  padding-bottom: .5rem;
+  margin-left: 2rem;
 }
 
 @media only screen and (max-width: 600px) {
   header h1, header h2 {
-    padding-bottom: 1.5rem;
+    margin-top: 1.5rem;
   }
 }
 
 header h2 {
-  padding-bottom: 1.5rem;
+  margin-top: 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -55,22 +58,19 @@ nav {
 
 nav ul {
   display: flex;
-  flex-direction: column;
   width: 100%;
 }
 
 nav ul li {
   list-style-type: none;
-  /* padding-top: .5rem;
-            padding-bottom: .5rem; */
 }
 
 nav ul li.active {
-  background-color: #BF584D;
+  background-color: #b24b40;
 }
 
 nav ul li:hover {
-  background-color: #401D1A;
+  background-color: #522521;
 }
 
 nav ul li a {
@@ -80,81 +80,75 @@ nav ul li a {
   text-align: center;
   padding-top: .5rem;
   padding-bottom: .5rem;
+  width: 100%;
 }
 
 nav ul li a:hover {
   color: #FCD4CD;
 }
 
-@media only screen and (min-width: 600px) {
-  nav ul li {
-    width: 100%;
-  }
-}
-
 @media only screen and (min-width: 1140px) {
   nav ul li {
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-}
-
-@media only screen and (min-width: 1140px) {
-  nav ul {
     float: left;
     background-color: #FF7566;
   }
 }
 
+@media only screen and (max-width: 1140px) {
+  nav ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
 /* ---------- Main ---------- */
 main {
-  margin: 2rem;
   color: #401D1A;
 }
 
 main h1 {
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-left: 2%;
 }
 
 main div.images-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
 }
 
 main div.images-wrapper figure {
-  margin-bottom: 1.5rem;
+  flex-basis: 46%;
   text-align: center;
-  margin-left: .5rem;
-  margin-right: .5rem;
+  margin: 1rem 2%;
+}
+
+@media only screen and (min-width: 740px) {
+  main div.images-wrapper figure {
+    flex-basis: 29%;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  main div.images-wrapper figure {
+    flex-basis: 21%;
+  }
 }
 
 main div.images-wrapper figure img {
   height: 200px;
-  width: 200px;
+  width: 100%;
+  /* 200px */
   object-fit: cover;
-}
-
-@media only screen and (min-width: 700px) {
-  main div.images-wrapper figure img {
-    height: 250px;
-    width: 250px;
-  }
-}
-
-@media only screen and (min-width: 700px) {
-  main div.images-wrapper {
-    /* justify-content: flex-start; */
-  }
 }
 
 /* ---------- Footer ---------- */

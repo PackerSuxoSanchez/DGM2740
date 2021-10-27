@@ -23,26 +23,32 @@ body {
 /* ---------- Header ---------- */
 
 header {
+    display: grid;
+    grid-template-columns: 100px auto;
     /* background-color: $main-color; */
-    padding-top: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
     img {
         max-height: 100px;
         float: left;
         margin-left: 2rem;
     }
+
     h1, h2 {
         color: $dark-color;
+        margin-top: 1rem;
         margin-right: 2rem;
-        margin-left: 13rem;
-        padding-bottom: .5rem;
+        margin-left: 2rem;
 
         @media only screen and (max-width: 600px) {
-            padding-bottom: 1.5rem;
+            margin-top: 1.5rem;
         }
     }
+    
     h2 {
-        padding-bottom: 1.5rem;
-
+        margin-top: 0;
+        
         @media only screen and (max-width: 600px) {
             display: none;
         }
@@ -56,20 +62,17 @@ nav {
 
     ul {
         display: flex;
-        flex-direction: column;
         width: 100%;
 
         li {
             list-style-type: none;
-            /* padding-top: .5rem;
-            padding-bottom: .5rem; */
 
             &.active {
-                background-color: $secondary-color;
+                background-color: darken($secondary-color, 5%);
             }
 
             &:hover {
-                background-color: $dark-color;
+                background-color: lighten($dark-color, 5%);
             }
 
             a {
@@ -79,31 +82,30 @@ nav {
                 text-align: center;
                 padding-top: .5rem;
                 padding-bottom: .5rem;
+                width: 100%;
 
                 &:hover {
                     color: $light-color;
                 }
             }
 
-            @media only screen and (min-width: 600px) {
-                width: 100%;
-            }
-
             @media only screen and (min-width: 1140px) {
                 padding-left: 1rem;
                 padding-right: 1rem;
+                float: left;
+                background-color: $main-color;
+            }
+
+            @media only screen and (max-width: 1140px) {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                width: 100%;
             }
         }
 
-        @media only screen and (min-width: 600px) {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-        }
-        
-        @media only screen and (min-width: 1140px) {
-            float: left;
-            background-color: $main-color;
+        @media only screen and (max-width: 600px) {
+            flex-direction: column;
         }
     }
 }
@@ -111,39 +113,35 @@ nav {
 /* ---------- Main ---------- */
 
 main {
-    margin: 2rem;
     color: $dark-color;
 
     h1 {
         margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin-left: 2%;
     }
 
     div.images-wrapper {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
 
         figure {
-            margin-bottom: 1.5rem;
+            flex-basis: 46%;
             text-align: center;
-            margin-left: .5rem;
-            margin-right: .5rem;
-    
+            margin: 1rem 2%;
+
+            @media only screen and (min-width: 740px) {
+                flex-basis: 29%;
+            }
+
+            @media only screen and (min-width:1140px) {
+                flex-basis: 21%;
+            }
+
             img {
                 height: 200px;
-                width: 200px;
+                width: 100%; /* 200px */
                 object-fit: cover;
-
-                @media only screen and (min-width:700px) {
-                    height: 250px;
-                    width: 250px;
-                }
             }
-        }
-
-        @media only screen and (min-width: 700px) {
-            /* justify-content: flex-start; */
         }
     }
 }
