@@ -1,0 +1,134 @@
+/* ---------- Variables ---------- */
+/* ---------- Universal ---------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- Body ---------- */
+body {
+  font-family: 'Arimo', sans-serif;
+  max-width: 960px;
+  margin: auto;
+}
+
+/* ---------- Header ---------- */
+div.header-wrapper header {
+  background-image: linear-gradient(rgba(134, 134, 141, 0.5), rgba(194, 194, 187, 0.5)), url(https://source.unsplash.com/featured/?nature,forest);
+  background-size: cover;
+  /* h1, h2 {
+            color: whitesmoke;
+        } */
+}
+
+div.header-wrapper header h1 {
+  padding-top: .5rem;
+  padding-bottom: .25rem;
+  padding-left: 1rem;
+}
+
+div.header-wrapper header h2 {
+  padding-bottom: .5rem;
+  padding-left: 1rem;
+}
+
+/* ---------- Navigation ---------- */
+div.nav-wrapper nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #A17D4A;
+  width: 100%;
+  /* @media only screen and (min-width: 960px) {
+
+            } */
+}
+
+@media only screen and (min-width: 600px) {
+  div.nav-wrapper nav ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+div.nav-wrapper nav ul a {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+
+div.nav-wrapper nav ul a li {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+div.nav-wrapper nav ul a li.active {
+  color: whitesmoke;
+  background-color: #54432B;
+}
+
+div.nav-wrapper nav ul a li:hover {
+  background-color: #846AA1;
+}
+
+/* ---------- Main ---------- */
+div.main-wrapper main {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.main-wrapper main h1 {
+  margin-top: .5rem;
+}
+
+div.main-wrapper main div.cards {
+  text-align: center;
+  margin-top: 1rem;
+  /* @media only screen and (min-width: 600px) {
+                flex-basis: 46%;
+            } */
+  /* @media only screen and (min-width: 960px) {
+                flex-basis: 29%;
+            } */
+}
+
+div.main-wrapper main div.cards div {
+  background-color: #5AA16F;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 2%;
+  width: 96%;
+}
+
+div.main-wrapper main div.cards div h2 {
+  margin-bottom: .5rem;
+}
+
+div.main-wrapper main div.cards div p {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  text-align: left;
+}
+
+div.main-wrapper main div.cards div button {
+  background-color: #846AA1;
+  color: whitesmoke;
+  padding: .5rem 4rem;
+  border-radius: 5px;
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+}
+
+/* ---------- Footer ---------- */
+div.footer-wrapper footer {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #A17D4A;
+}

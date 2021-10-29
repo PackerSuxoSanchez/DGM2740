@@ -1,0 +1,164 @@
+/* ---------- Variables ---------- */
+$main-color: #5AA16F;
+$secondary-color: #A17D4A;
+$tertiary-color: #846AA1;
+$dark-main-color: #275434;
+$dark-color: #54432B;
+$light-color: whitesmoke;
+
+/* ---------- Universal ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- Body ---------- */
+
+body {
+    font-family: 'Arimo', sans-serif;
+    max-width: 960px;
+    margin: auto;
+}
+
+/* ---------- Header ---------- */
+
+div.header-wrapper {
+
+    header {
+        background-image: linear-gradient(rgba(134, 134, 141, 0.5), rgba(194, 194, 187, 0.5)), url(https://source.unsplash.com/featured/?nature,forest);
+        background-size: cover;
+
+        /* h1, h2 {
+            color: whitesmoke;
+        } */
+
+        h1 {
+            padding-top: .5rem;
+            padding-bottom: .25rem;
+            padding-left: 1rem;
+        }
+
+        h2 {
+            padding-bottom: .5rem;
+            padding-left: 1rem;
+        }
+    }
+}
+
+/* ---------- Navigation ---------- */
+
+div.nav-wrapper {
+
+    nav {
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background-color: $secondary-color;
+            width: 100%;
+
+            @media only screen and (min-width: 600px) {
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+            /* @media only screen and (min-width: 960px) {
+
+            } */
+
+            a {
+                list-style-type: none;
+                text-decoration: none;
+                color: black;
+                width: 100%;
+
+                li {
+                    padding-top: .5rem;
+                    padding-bottom: .5rem;
+
+                    &.active {
+                        color: $light-color;
+                        background-color: $dark-color;
+                    }
+
+                    &:hover {
+                        background-color: $tertiary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ---------- Main ---------- */
+
+div.main-wrapper {
+
+    main {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+
+        h1 {
+            margin-top: .5rem;
+        }
+
+        div.cards {
+            text-align: center;
+            margin-top: 1rem;
+
+            /* @media only screen and (min-width: 600px) {
+                flex-basis: 46%;
+            } */
+
+            /* @media only screen and (min-width: 960px) {
+                flex-basis: 29%;
+            } */
+
+            div {
+                background-color: $main-color;
+                border-radius: 5px;
+                margin-bottom: 1rem;
+                padding: 2%;
+                width: 96%;
+
+                h2 {
+                    margin-bottom: .5rem;
+                }
+
+                p {
+                    margin-top: .5rem;
+                    margin-bottom: .5rem;
+                    text-align: left;
+                }
+
+                button {
+                    background-color: $tertiary-color;
+                    color: $light-color;
+                    padding: .5rem 4rem;
+                    border-radius: 5px;
+                    margin-top: .25rem;
+                    margin-bottom: .25rem;
+                }
+            }
+        }
+    }
+}
+
+/* ---------- Footer ---------- */
+
+div.footer-wrapper {
+
+    footer {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: $secondary-color;
+    }
+}
