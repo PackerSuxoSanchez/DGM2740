@@ -44,11 +44,7 @@ div.header-wrapper header h2 {
 
 /* ---------- Navigation ---------- */
 div.nav-wrapper {
-  background-color: #A17D4A;
-}
-
-div.nav-wrapper nav {
-  padding-left: 4%;
+  background-color: #5b472a;
 }
 
 div.nav-wrapper nav ul {
@@ -56,7 +52,7 @@ div.nav-wrapper nav ul {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: #A17D4A;
+  background-color: #5b472a;
   width: 100%;
 }
 
@@ -77,7 +73,7 @@ div.nav-wrapper nav ul {
 div.nav-wrapper nav ul a {
   list-style-type: none;
   text-decoration: none;
-  color: black;
+  color: whitesmoke;
   width: 100%;
 }
 
@@ -88,11 +84,11 @@ div.nav-wrapper nav ul a li {
 
 div.nav-wrapper nav ul a li.active {
   color: whitesmoke;
-  background-color: #54432B;
+  background-color: #32281a;
 }
 
 div.nav-wrapper nav ul a li:hover {
-  background-color: #846AA1;
+  background-color: #7f68a6;
 }
 
 /* ---------- Main ---------- */
@@ -121,7 +117,7 @@ div.main-wrapper main div.cards {
 }
 
 div.main-wrapper main div.cards div {
-  background-color: #5AA16F;
+  background-color: #6FC78A;
   border-radius: 5px;
   margin: 2%;
   padding: 2%;
@@ -152,12 +148,13 @@ div.main-wrapper main div.cards div p {
 }
 
 div.main-wrapper main div.cards div button {
-  background-color: #846AA1;
+  background-color: #4e3e6a;
   color: whitesmoke;
   padding: .5rem 4rem;
   border-radius: 5px;
   margin-top: .25rem;
   margin-bottom: .25rem;
+  border-color: #66518A;
 }
 
 div.main-wrapper main div.cards div:hover img {
@@ -180,7 +177,7 @@ div.main-wrapper main div.cards div:hover img {
 
 /* ---------- Footer ---------- */
 div.footer-wrapper {
-  background-color: #A17D4A;
+  background-color: #5b472a;
 }
 
 div.footer-wrapper footer {
@@ -188,5 +185,6 @@ div.footer-wrapper footer {
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #A17D4A;
+  background-color: #5b472a;
+  color: whitesmoke;
 }
