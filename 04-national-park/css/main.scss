@@ -6,6 +6,7 @@ $tertiary-color: #66518A;
 $dark-main-color: #275434;
 $dark-color: #54432B;
 $light-color: whitesmoke;
+$header-linear-gradiant: rgba(187, 187, 197, 0.5), rgba(212, 212, 199, 0.5);
 
 /* ---------- Universal ---------- */
 
@@ -30,8 +31,20 @@ header, nav, main, footer {
 /* ---------- Header ---------- */
 
 div.header-wrapper {
-    background-image: linear-gradient(rgba(134, 134, 141, 0.5), rgba(194, 194, 187, 0.5)), url(https://source.unsplash.com/featured/?nature,forest);
+    background-image: linear-gradient($header-linear-gradiant), url(https://source.unsplash.com/600x140/?nature,forest);
+    height: 140px;
+
+    @media only screen and (min-width: 600px) {
+        background-image: linear-gradient($header-linear-gradiant), url(https://source.unsplash.com/960x240/?nature,forest);
+        height: 240px;
+    }
+
+    @media only screen and (min-width: 960px) {
+        background-image: linear-gradient($header-linear-gradiant), url(https://source.unsplash.com/1600x400/?nature,forest);
+        height: 400px;
         background-size: cover;
+        background-position: center;   
+    }
 
     header {
         /* background-image: linear-gradient(rgba(134, 134, 141, 0.5), rgba(194, 194, 187, 0.5)), url(https://source.unsplash.com/featured/?nature,forest);
@@ -42,7 +55,7 @@ div.header-wrapper {
         } */
 
         h1 {
-            padding-top: 1%;
+            padding-top: 6%;
             padding-bottom: .5%;
             padding-left: 2%;
         }
@@ -63,7 +76,7 @@ div.nav-wrapper {
 
         ul {
             display: flex;
-            flex-direction: column;
+            /* flex-direction: column; */
             justify-content: center;
             text-align: center;
             background-color: darken($secondary-color, 20%);
@@ -79,15 +92,13 @@ div.nav-wrapper {
                 width: 35%;
             }
 
-            a {
-                list-style-type: none;
-                text-decoration: none;
-                color: $light-color;
-                width: 100%;
-
                 li {
                     padding-top: .5rem;
                     padding-bottom: .5rem;
+                    list-style-type: none;
+                    color: $light-color;
+                    width: 100%;
+                    height: 100%;
 
                     &.active {
                         color: $light-color;
@@ -97,11 +108,17 @@ div.nav-wrapper {
                     &:hover {
                         background-color: lighten($tertiary-color, 10%);
                     }
+
+                    a {
+                        text-decoration: none;
+                        color: $light-color;
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
             }
         }
     }
-}
 
 /* ---------- Main ---------- */
 

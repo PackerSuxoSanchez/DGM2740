@@ -19,8 +19,24 @@ header, nav, main, footer {
 
 /* ---------- Header ---------- */
 div.header-wrapper {
-  background-image: linear-gradient(rgba(134, 134, 141, 0.5), rgba(194, 194, 187, 0.5)), url(https://source.unsplash.com/featured/?nature,forest);
-  background-size: cover;
+  background-image: linear-gradient(rgba(187, 187, 197, 0.5), rgba(212, 212, 199, 0.5)), url(https://source.unsplash.com/600x140/?nature,forest);
+  height: 140px;
+}
+
+@media only screen and (min-width: 600px) {
+  div.header-wrapper {
+    background-image: linear-gradient(rgba(187, 187, 197, 0.5), rgba(212, 212, 199, 0.5)), url(https://source.unsplash.com/960x240/?nature,forest);
+    height: 240px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  div.header-wrapper {
+    background-image: linear-gradient(rgba(187, 187, 197, 0.5), rgba(212, 212, 199, 0.5)), url(https://source.unsplash.com/1600x400/?nature,forest);
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 div.header-wrapper header {
@@ -32,7 +48,7 @@ div.header-wrapper header {
 }
 
 div.header-wrapper header h1 {
-  padding-top: 1%;
+  padding-top: 6%;
   padding-bottom: .5%;
   padding-left: 2%;
 }
@@ -49,7 +65,7 @@ div.nav-wrapper {
 
 div.nav-wrapper nav ul {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
   text-align: center;
   background-color: #5b472a;
@@ -70,25 +86,29 @@ div.nav-wrapper nav ul {
   }
 }
 
-div.nav-wrapper nav ul a {
-  list-style-type: none;
-  text-decoration: none;
-  color: whitesmoke;
-  width: 100%;
-}
-
-div.nav-wrapper nav ul a li {
+div.nav-wrapper nav ul li {
   padding-top: .5rem;
   padding-bottom: .5rem;
+  list-style-type: none;
+  color: whitesmoke;
+  width: 100%;
+  height: 100%;
 }
 
-div.nav-wrapper nav ul a li.active {
+div.nav-wrapper nav ul li.active {
   color: whitesmoke;
   background-color: #32281a;
 }
 
-div.nav-wrapper nav ul a li:hover {
+div.nav-wrapper nav ul li:hover {
   background-color: #7f68a6;
+}
+
+div.nav-wrapper nav ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  width: 100%;
+  height: 100%;
 }
 
 /* ---------- Main ---------- */
