@@ -36,13 +36,10 @@
     <div class="hero-wrapper">
         <!-- HERO IMAGE GOES HERE -->
         <picture>
-            <figure>
-                <img src="images/hero.jpg" alt="Hero Image" sizes=""
-                srcset="images/hero450.png 600w,"
-                srcset="images/hero750.png 750w,"
-                srcset="images/hero900.png 900w,"
-                srcset="images/hero1050.png 1050w">
-            </figure>
+            <source media="(max-width: 450px)" srcset="images/hero450.jpg">
+            <source media="(max-width: 600px)" srcset="images/hero600.jpg">
+            <source media="(max-width: 750px)" srcset="images/hero750.jpg">
+            <img src="images/hero900.jpg" alt="Inside Restaurant">
         </picture>
     </div>
     <div class="main-wrapper">
@@ -50,18 +47,15 @@
         <main>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aperiam commodi sit eum laudantium. Ab delectus dicta laboriosam at quibusdam recusandae non impedit eligendi incidunt atque aperiam culpa, magni sed nam, fugiat sunt doloribus. Deserunt ipsa, nesciunt, placeat possimus magni unde consequuntur, asperiores earum omnis maxime officia? Nesciunt, reprehenderit dolores!</p>
             <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ut harum voluptatem sunt reprehenderit quasi aliquid mollitia magnam eius id nobis, est omnis quod accusamus et laudantium eaque commodi nulla adipisci dolores repudiandae laboriosam nemo ipsum voluptatum. Placeat laudantium nobis molestias quibusdam, nesciunt praesentium saepe quasi recusandae ducimus beatae sequi?</p> -->
-            <aside>
-                <!-- ASIDE GOES HERE -->
                 <picture>
                     <figure>
                         <img src="images/founder.jpg" alt="Founder of Restaurant" sizes="50vw"
                         srcset="images/founder300.jpg 300w,"
                         srcset="images/founder450.jpg 450w,"
                         srcset="images/founder600.jpg 600w">
-                        <figcaption>John Doe</figcaption>
+                        <figcaption>John Doe, Founder</figcaption>
                     </figure>
                 </picture>
-            </aside>
         </main>
     </div>
     <div class="footer-wrapper">
