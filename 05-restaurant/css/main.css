@@ -10,7 +10,7 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
-header, nav, main, footer {
+header, nav, main, .main-wrapper, footer {
   max-width: 1200px;
   margin: auto;
 }
@@ -18,15 +18,20 @@ header, nav, main, footer {
 /* ---------- Header ---------- */
 div.header-wrapper {
   background-color: #360F0C;
-  /*
-
-    LOGO CSS HERE
-    
-    */
 }
 
 div.header-wrapper header {
   color: #F78A80;
+  padding-bottom: 1rem;
+}
+
+div.header-wrapper header figure.logo {
+  float: left;
+}
+
+div.header-wrapper header figure.logo img {
+  margin: 1rem;
+  height: 100px;
 }
 
 div.header-wrapper header h1, div.header-wrapper header h2 {
@@ -34,7 +39,7 @@ div.header-wrapper header h1, div.header-wrapper header h2 {
 }
 
 div.header-wrapper header h1 {
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   line-height: 2rem;
 }
 
@@ -88,27 +93,27 @@ div.nav-wrapper nav ul li a {
 
 /* ---------- Hero ---------- */
 div.hero-wrapper {
-  background-image: url(https://source.unsplash.com/featured/?food,fancy);
-  background-size: cover;
-  background-position: center;
-  height: 10vh;
-}
+  /* background-image: url(https://source.unsplash.com/featured/?food,fancy);
+    background-size: cover;
+    background-position: center;
+    height: 10vh;
 
-@media only screen and (min-width: 600px) {
-  div.hero-wrapper {
-    height: 20vh;
-  }
-}
+    @media only screen and (min-width: 600px) {
+        height: 20vh;
+    }
 
-@media only screen and (min-width: 1200px) {
-  div.hero-wrapper {
-    height: 40vh;
-  }
+    @media only screen and (min-width: 1200px) {
+        height: 40vh;
+    } */
 }
 
 /* ---------- Main ---------- */
-div.main-wrapper main h1 {
+h2 {
   margin: 1rem 1rem;
+}
+
+div.main-wrapper main {
+  display: flex;
 }
 
 div.main-wrapper main p {
@@ -116,12 +121,22 @@ div.main-wrapper main p {
 }
 
 div.main-wrapper main aside {
-  background-image: url(https://source.unsplash.com/featured/?man);
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  width: 200px;
-  margin: 1rem;
+  /* background-image: url(https://source.unsplash.com/featured/?man);
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            width: 300px;
+            margin: 1rem; */
+}
+
+div.main-wrapper main aside picture img {
+  /* @media only screen and (min-width: 600px) {
+                        width: 450px;
+                    }
+        
+                    @media only screen and (min-width: 1200px) {
+                        width: 600px;
+                    } */
 }
 
 /* ---------- Footer ---------- */

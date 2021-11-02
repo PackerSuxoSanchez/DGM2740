@@ -15,10 +15,10 @@ $light-color: #F78A80;
 /* ---------- Body ---------- */
 
 body {
-    font-family: 'Nunito', sans-serif;;
+    font-family: 'Nunito', sans-serif;
 }
 
-header, nav, main, footer {
+header, nav, main, .main-wrapper, footer {
     max-width: 1200px;
     margin: auto;
 }
@@ -28,21 +28,28 @@ header, nav, main, footer {
 div.header-wrapper {
     background-color: $dark-color;
 
-    /*
-
-    LOGO CSS HERE
-    
-    */
-
     header {
         color: $light-color;
+        padding-bottom: 1rem;
+
+        figure {
+
+            &.logo {
+                float: left;
+
+                img {
+                    margin: 1rem;
+                    height: 100px;
+                }
+            }
+        }
 
         h1, h2 {
             margin-left: 1rem;
         }
 
         h1 {
-            padding-top: 1rem;
+            padding-top: 1.5rem;
             line-height: 2rem;
         }
 
@@ -101,7 +108,7 @@ div.nav-wrapper {
 /* ---------- Hero ---------- */
 
 div.hero-wrapper {
-    background-image: url(https://source.unsplash.com/featured/?food,fancy);
+    /* background-image: url(https://source.unsplash.com/featured/?food,fancy);
     background-size: cover;
     background-position: center;
     height: 10vh;
@@ -112,30 +119,47 @@ div.hero-wrapper {
 
     @media only screen and (min-width: 1200px) {
         height: 40vh;
-    }
+    } */
 }
 
 /* ---------- Main ---------- */
 
+h2 {
+    margin: 1rem 1rem;
+}
+
 div.main-wrapper {
 
     main {
+        display: flex;
         
-        h1 {
-            margin: 1rem 1rem;
-        }
+        
 
         p {
             margin: 0 1rem;
         }
 
         aside {
-            background-image: url(https://source.unsplash.com/featured/?man);
+            /* background-image: url(https://source.unsplash.com/featured/?man);
             background-size: cover;
             background-position: center;
             height: 400px;
-            width: 200px;
-            margin: 1rem;
+            width: 300px;
+            margin: 1rem; */
+
+            picture {
+
+                img {
+
+                    /* @media only screen and (min-width: 600px) {
+                        width: 450px;
+                    }
+        
+                    @media only screen and (min-width: 1200px) {
+                        width: 600px;
+                    } */
+                }
+            }
         }
     }
 }
