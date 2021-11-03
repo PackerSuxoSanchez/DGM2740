@@ -124,6 +124,9 @@ div.hero-wrapper {
     picture {
 
         img {
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
             height: 40vh;
             background-size: contain;
         }
