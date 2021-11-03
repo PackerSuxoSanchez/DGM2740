@@ -124,7 +124,8 @@ div.hero-wrapper {
     picture {
 
         img {
-            
+            height: 40vh;
+            background-size: contain;
         }
     }
 }
@@ -139,35 +140,15 @@ div.main-wrapper {
 
     main {
         display: flex;
-        
-        
 
         p {
             margin: 0 1rem;
         }
 
-        aside {
-            /* background-image: url(https://source.unsplash.com/featured/?man);
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            width: 300px;
-            margin: 1rem; */
-
-            picture {
-
-                img {
-
-                    /* @media only screen and (min-width: 600px) {
-                        width: 450px;
-                    }
-        
-                    @media only screen and (min-width: 1200px) {
-                        width: 600px;
-                    } */
-                }
+        figure {
+            text-align: center;
+            margin: 0 1rem;
             }
-        }
     }
 }
 

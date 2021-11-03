@@ -36,26 +36,27 @@
     <div class="hero-wrapper">
         <!-- HERO IMAGE GOES HERE -->
         <picture>
-            <source media="(max-width: 450px)" srcset="images/hero450.jpg">
-            <source media="(max-width: 600px)" srcset="images/hero600.jpg">
-            <source media="(max-width: 750px)" srcset="images/hero750.jpg">
-            <img src="images/hero900.jpg" alt="Inside Restaurant">
+            <source media="(max-width: 900px)" srcset="images/hero450.jpg 900w">
+            <source media="(max-width: 1200px)" srcset="images/hero600.jpg 1200w">
+            <source media="(max-width: 1500px)" srcset="images/hero750.jpg 1500w">
+            <source media="(max-width: 1800px)" srcset="images/hero900.jpg 1800w">
+            <source media="(max-width: 2100px)" srcset="images/hero1050.jpg 2100w">
+            <img src="images/hero.jpg" alt="Inside Restaurant" sizes="100vw">
         </picture>
     </div>
     <div class="main-wrapper">
         <h2>Our Founder</h2>
         <main>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aperiam commodi sit eum laudantium. Ab delectus dicta laboriosam at quibusdam recusandae non impedit eligendi incidunt atque aperiam culpa, magni sed nam, fugiat sunt doloribus. Deserunt ipsa, nesciunt, placeat possimus magni unde consequuntur, asperiores earum omnis maxime officia? Nesciunt, reprehenderit dolores!</p>
-            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ut harum voluptatem sunt reprehenderit quasi aliquid mollitia magnam eius id nobis, est omnis quod accusamus et laudantium eaque commodi nulla adipisci dolores repudiandae laboriosam nemo ipsum voluptatum. Placeat laudantium nobis molestias quibusdam, nesciunt praesentium saepe quasi recusandae ducimus beatae sequi?</p> -->
-                <picture>
-                    <figure>
-                        <img src="images/founder.jpg" alt="Founder of Restaurant" sizes="50vw"
-                        srcset="images/founder300.jpg 300w,"
-                        srcset="images/founder450.jpg 450w,"
-                        srcset="images/founder600.jpg 600w">
-                        <figcaption>John Doe, Founder</figcaption>
-                    </figure>
-                </picture>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis corporis et aliquid minima, exercitationem neque voluptatum, libero sit deserunt, earum commodi magnam hic quibusdam facere iure temporibus nostrum qui voluptatem. Hic expedita reprehenderit cum necessitatibus est atque tempore fugiat. A dolore velit dolores id porro laborum doloremque non repudiandae voluptate? Asperiores quia aliquid nulla recusandae ducimus temporibus delectus neque ipsa quis esse assumenda consectetur, eaque corrupti. Similique facilis velit expedita aliquid sapiente quidem explicabo officia, recusandae officiis mollitia hic esse rem quibusdam sint fugit obcaecati impedit exercitationem ipsa enim cumque nihil labore incidunt totam. Maxime similique minus unde velit maiores.</p>
+                <figure>
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="images/founder300.jpg 600w">
+                        <source media="(max-width: 900px)" srcset="images/founder450.jpg 900w">
+                        <source media="(max-width: 1200px)" srcset="images/founder600.jpg 1200w">
+                        <img src="images/founder600.jpg" alt="Founder of Restaurant" sizes="50vw">
+                    </picture>
+                    <figcaption>John Doe, Founder</figcaption>
+                </figure>
         </main>
     </div>
     <div class="footer-wrapper">
