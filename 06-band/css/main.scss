@@ -119,6 +119,44 @@ div.content-wrapper {
                 h3 {
                     margin: .5rem 1rem 0 1rem;
                 }
+
+                figure {
+
+                    img {
+                        height: 150px;
+                        width: 150px;
+                        object-fit: cover;
+                        margin: .5rem;
+
+                        &.member-drummer {
+                            margin: 1rem 1rem 0 1rem;
+                            float: right;
+                            clip-path: circle(50% at 50% 50%);
+                            shape-outside: circle(50% at 50% 50%);
+                        }
+
+                        &.member-singer {
+                            margin: 1rem 1rem 0 1rem;
+                            float: right;
+                            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+                            shape-outside: polygon(50% 0%, 0% 100%, 100% 100%);
+                        }
+
+                        &.member-guitar {
+                            margin: 1rem 1rem 0 1rem;
+                            float: right;
+                            clip-path: polygon(0 0, 100% 100%, 100% 0);
+                            shape-outside: polygon(0 0, 100% 100%, 100% 0);
+                        }
+
+                        &.member-backup {
+                            margin: 1rem 1rem 0 1rem;
+                            float: right;
+                            clip-path: circle(100.0% at 100% 0);
+                            shape-outside: circle(100.0% at 100% 0);
+                        }
+                    }
+                }
     
                 p {
                     margin: .5rem 1rem;
