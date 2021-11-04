@@ -60,29 +60,37 @@
                     </div>
                 </div>
             </main>
-                <div class="performances">
-                    <h2>Performances</h2>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
+            <h2>Performances</h2>
+            <div class="performances">
+                <figure><img alt="Concert" class="lazy" data-src="images/concert1.jpg"></figure>
+                <figure><img alt="Concert" class="lazy" data-src="images/concert2.jpg"></figure>
+                <figure><img alt="Concert" class="lazy" data-src="images/concert3.jpg"></figure>
+                <figure><img alt="Concert" class="lazy" data-src="images/concert4.jpg"></figure>
+                <figure><img alt="Concert" class="lazy" data-src="images/concert5.jpg"></figure>
+                <figure><img alt="Concert" class="lazy" data-src="images/concert6.jpg"></figure>
+                <figure><img alt="Concert" class="lazy" data-src="images/concert7.jpg"></figure>
+                <figure><img alt="Concert" class="lazy" data-src="images/concert8.jpg"></figure>
+                <figure><img alt="Concert" class="lazy" data-src="images/concert9.jpg"></figure>
+                <figure><img alt="Concert" class="lazy" data-src="images/concert10.jpg"></figure>
+                <figure><img alt="Concert" class="lazy" data-src="images/concert11.jpg"></figure>
+                <figure><img alt="Concert" class="lazy" data-src="images/concert12.jpg"></figure>
+                <figure><img alt="Concert" class="lazy" data-src="images/concert13.jpg"></figure>
+                <figure><img alt="Concert" class="lazy" data-src="images/concert14.jpg"></figure>
+                <figure><img alt="Concert" class="lazy" data-src="images/concert15.jpg"></figure>
+            </div>
         </div>
         <div class="footer-wrapper">
             <footer>
                 <p>&copy; 2021 Packer Suxo-Sanchez</p>
             </footer>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.5.0/dist/lazyload.min.js"></script>
+        <script>
+            var lazyLoadInstance = new LazyLoad({
+            // Your custom settings go here
+            elements_selector: ".lazy",
+            threshold: 0
+            });
+        </script>
 </body>
 </html>
