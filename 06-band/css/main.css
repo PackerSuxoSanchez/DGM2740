@@ -1,0 +1,125 @@
+/* ---------- Variables ---------- */
+/* ---------- Universal ---------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+header, nav, main, .content-wrapper, footer {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ---------- Header ---------- */
+div.header-wrapper {
+  background-color: #3A3B40;
+}
+
+div.header-wrapper header {
+  color: #D1D5E6;
+  padding-bottom: 1rem;
+}
+
+div.header-wrapper header h1, div.header-wrapper header h2 {
+  margin-left: 1rem;
+}
+
+div.header-wrapper header h1 {
+  padding-top: 1.5rem;
+  line-height: 2rem;
+}
+
+div.header-wrapper header h2 {
+  padding-bottom: 1rem;
+}
+
+/* ---------- Navigation ---------- */
+div.nav-wrapper {
+  background-color: #747680;
+}
+
+div.nav-wrapper nav ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+div.nav-wrapper nav ul li {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  list-style-type: none;
+  color: #D1D5E6;
+  width: 100%;
+  height: 100%;
+}
+
+div.nav-wrapper nav ul li.active {
+  color: #D1D5E6;
+  background-color: #3A3B40;
+}
+
+div.nav-wrapper nav ul li:hover {
+  background-color: #AEB1BF;
+}
+
+div.nav-wrapper nav ul li a {
+  text-decoration: none;
+  color: #D1D5E6;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+  div.nav-wrapper nav ul {
+    justify-content: flex-start;
+    width: 35%;
+  }
+}
+
+/* ---------- Content ---------- */
+div.content-wrapper h2 {
+  margin: 1rem 1rem 0 1rem;
+}
+
+div.content-wrapper main div.members {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 600px) {
+  div.content-wrapper main div.members div {
+    flex-basis: 50%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  div.content-wrapper main div.members div {
+    flex-basis: 25%;
+  }
+}
+
+div.content-wrapper main div.members div h3 {
+  margin: .5rem 1rem 0 1rem;
+}
+
+div.content-wrapper main div.members div p {
+  margin: .5rem 1rem;
+}
+
+/* ---------- Footer ---------- */
+div.footer-wrapper {
+  background-color: #3A3B40;
+}
+
+div.footer-wrapper footer {
+  margin-top: 1rem;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #D1D5E6;
+}
