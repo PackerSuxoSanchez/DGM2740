@@ -1,0 +1,87 @@
+/* ---------- Variables ---------- */
+
+$primary-color: #74B5F9;
+$secondary-color: #3A597A;
+$tertiary-color: #5787BA;
+$dark-color: #1C2B3B;
+$light-color: #F9F9FF;
+
+/* ---------- Universal ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+header, nav, main, .content-wrapper, footer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ---------- Header ---------- */
+
+/* ---------- Navigation ---------- */
+
+div.nav-wrapper {
+    background-color: $secondary-color;
+
+    nav {
+
+        ul {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+
+            li {
+                padding-top: .5rem;
+                padding-bottom: .5rem;
+                list-style-type: none;
+                color: $light-color;
+                width: 100%;
+                height: 100%;
+
+                &.active {
+                    color: $light-color;
+                    background-color: $dark-color;
+                }
+
+                &:hover {
+                    background-color: $tertiary-color;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $light-color;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            @media only screen and (min-width: 1200px) {
+                justify-content: flex-start;
+                width: 35%;
+            }
+        }
+    }
+}
+
+/* ---------- Content ---------- */
+
+/* ---------- Footer ---------- */
+
+div.footer-wrapper {
+    background-color: $dark-color;
+
+    footer {
+        margin-top: 1rem;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        color: $light-color;
+    }
+}
