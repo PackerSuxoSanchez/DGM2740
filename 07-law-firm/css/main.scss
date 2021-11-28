@@ -6,6 +6,8 @@ $tertiary-color: #5787BA;
 $dark-color: #1C2B3B;
 $light-color: #F9F9FF;
 
+$gutter: 2vw;
+
 /* ---------- Universal ---------- */
 
 * {
@@ -23,6 +25,24 @@ header, nav, main, .content-wrapper, footer {
 }
 
 /* ---------- Header ---------- */
+
+div.top-line {
+    background-color: $dark-color;
+    height: 15px;
+}
+
+header {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    margin-left: .5rem;
+    display: flex;
+    justify-content: space-between;
+
+    div.header-search {
+        margin-top: 1rem;
+        margin-right: .5rem;
+    }
+}
 
 /* ---------- Navigation ---------- */
 
@@ -72,6 +92,145 @@ div.nav-wrapper {
 
 /* ---------- Content ---------- */
 
+.content-wrapper {
+
+    main {
+
+        .flexed {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .column {
+                margin: 0 $gutter;
+            }
+
+            @for $i from 1 through 12 {
+                $w:($i / 12) * 100%;
+                .small-#{$i} {flex-basis: $w}
+            }
+
+            @media only screen and (min-width: 720px) {
+                @for $i from 1 through 12 {
+                    $w:($i / 12) * 100%;
+                    .medium-#{$i} {flex-basis: $w}
+                }
+            }
+
+            @media only screen and (min-width: 900px) {
+                @for $i from 1 through 12 {
+                    $w:($i / 12) * 100%;
+                    .large-#{$i} {flex-basis: $w}
+                }
+            }
+
+            .advocates {
+                margin-bottom: 1rem;
+                text-align: center;
+                background-color: $secondary-color;
+                
+                p {
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    color: $light-color;
+                }
+
+                img {
+                    height: 200px;;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+
+                button {
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    padding: .5rem 3rem;
+                    border-radius: 5px;
+                    background-color: $primary-color;
+                    color: $dark-color;
+                }
+            }
+
+            .tiles {
+                margin: 0 2rem 1rem 2rem;
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+                background-color: $dark-color;
+                color: $light-color;
+                text-align: center;
+
+                p {
+                    text-transform: uppercase;
+                    font-size: 2rem;
+                }
+            }
+
+            .blog-post {
+                margin-bottom: 1rem;
+                width: 250px;
+                text-align: center;
+                background-color: $secondary-color;
+
+                h3 {
+                    margin-top: .5rem;
+                    margin-bottom: .5rem;
+                    color: $light-color;
+                }
+
+                p {
+                    padding-top: .5rem;
+                    padding-bottom: 1rem;
+                    color: $light-color;
+                }
+
+                img {
+                    height: 200px;;
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                div {
+                    background-color: $primary-color;
+
+                    p {
+                        padding-bottom: .5rem;
+
+                        a {
+                            text-decoration: none;
+                            color: $dark-color;
+                        }
+                    }
+
+                    
+                }
+            }
+
+            .tip-faq {
+                margin-bottom: .5rem;
+                padding: .5rem;
+                background-color: $tertiary-color;
+
+                h3 {
+                    margin-bottom: .5rem;
+                    color: $light-color;
+                }
+
+                p {
+                    color: $light-color;
+
+                    a {
+                        text-decoration: none;
+                        color: $dark-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
 /* ---------- Footer ---------- */
 
 div.footer-wrapper {
@@ -83,5 +242,20 @@ div.footer-wrapper {
         padding-top: 1rem;
         padding-bottom: 1rem;
         color: $light-color;
+
+        .social {
+
+            a {
+                padding-left: 2rem;
+                padding-right: 2rem;
+                text-decoration: none;
+                color: $light-color;
+                font-size: 2rem;
+            }
+
+            a:hover {
+                color: $tertiary-color;
+            }
+        }
     }
 }
