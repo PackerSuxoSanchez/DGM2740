@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boston city</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/b72c367e13.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header-container">
+        <header>
+            <h1>Boston City</h1>
+            <p>Where History Comes Alive</p>
+        </header>
+    </div>
+    <div class="nav-container clearfix">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primary-nav" class="hide">
+                <li class="active"><a href="#">Visit</a></li>
+                <li><a href="#">Departments</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Pay Bills</a></li>
+                <li><a href="#">Meetings</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content-container">
+        <div class="hero-slider">
+            <div>
+                <img src="images/boston-slider-1.jpg" alt="Sliding Image">
+            </div>
+            <div>
+                <img src="images/boston-slider-2.jpg" alt="Sliding Image">
+            </div>
+            <div>
+                <img src="images/boston-slider-3.jpg" alt="Sliding Image">
+            </div>
+            <div>
+                <img src="images/boston-slider-4.jpg" alt="Sliding Image">
+            </div>
+            <div>
+                <img src="images/boston-slider-5.jpg" alt="Sliding Image">
+            </div>
+        </div>
+        <main>
+            <h2>Plan Your Visit</h2>
+            <div class="cards">
+                <div class="card">
+                    <a href="#">
+                        <i class="fas fa-hotel"></i>
+                        <p>Places to Stay</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <i class="fas fa-grip-lines"></i>
+                        <p>Walk the Red Line</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <i class="fas fa-city"></i>
+                        <p>Pass to the City</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <i class="fas fa-utensils"></i>
+                        <p>Fine Dining</p>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="footer-container">
+        <footer>
+            <p>&copy; 2021 Packer Suxo-Sanchez | Login</p>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.hero-slider').slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 1000,
+                cssEase: 'ease-out',
+                autoplay: true,
+                autoplaySpeed: 30000
+            })
+        })
+    </script>
+</body>
+</html>
