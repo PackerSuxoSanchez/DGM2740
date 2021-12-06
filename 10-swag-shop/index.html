@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swag Shop</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="header-container">
+        <header>
+            <img src="images/store.png" alt="Swag Shop Logo">
+            <h1>Swag Shop</h1>
+        </header>
+    </div>
+    <nav class="clearfix">
+        <button id="hamburgerBtn"><span><i>&#9776;</i>OPEN</span> <span><i>&otimes;</i>CLOSE</span></button>
+        <ul id="primaryNav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Deals</a></li>
+            <li class="current-menu-item parent"><a href="#">Order</a>
+                <ul>
+                    <li><a href="#">Water Bottles</a></li>
+                    <li><a href="#">Hats</a></li>
+                    <li><a href="#">Shirts</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Customer Reviews</a></li> 
+    
+        </ul>
+    </nav>
+    <div class="content-container">
+        <main>
+            <h2>Order</h2>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label class="top">Full Name*<input type="text" name="name" required></label>
+                    <label class="top">Phone<input type="tel" name="phone" placeholder="123-456-7890"></label>
+                    <label class="top">Email*<input type="email" name="email" placeholder="swag@swagshop.com" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Swag Information</legend>
+                    <label class="top">Date Needed<input type="date" name="completeDate"></label>
+                    <label class="top">Business Name<input type="text" name="businessname"></label>
+                    <label class="top">Business URL<input type="text" name="website" placeholder="https://"></label>
+                    <label class="top">Color
+                        <select name="color">
+                            <option value="">Select Color</option>
+                            <option value="red">Red</option>
+                            <option value="orange">Orange</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                            <option value="purple">Purple</option>
+                            <option value="black">Black</option>
+                        </select>
+                    </label>
+                    <label class="top">Quantity<input type="number" name="quantity"></label>
+                    <div>Material</div>
+                    <label class="side"><input type="radio" name="material" value="aluminum">Aluminum</label>
+                    <label class="side"><input type="radio" name="material" value="plastic">Plastic</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Payment Information</legend>
+                    <label class="top">Name on Card<input type="text" name="name"></label>
+                    <label class="top">Card Number<input type="number" name="cardnumber"></label>
+                    <label class="top">Expiration Date<input type="date" name="date"></label>
+                </fieldset>
+                <input class="submitBtn" type="submit" value="Order My Swag!">
+            </form>
+        </main>
+    </div>
+    <div class="footer-container">
+        <footer>
+            <p>&copy; 2021 Packer Suxo-Sanchez | Login</p>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
