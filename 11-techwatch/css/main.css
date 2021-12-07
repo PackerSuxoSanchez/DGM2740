@@ -1,0 +1,209 @@
+/* ---------- Variables ---------- */
+/* ---------- Universal ---------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+/* header, nav, main, .content-container, footer {
+    
+} */
+div.page-container {
+  max-width: 64rem;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "hamburger" "header" "content" "footer" "nav";
+}
+
+@media only screen and (min-width: 35rem) {
+  div.page-container {
+    grid-template-areas: "header header" "nav content" "footer footer";
+    grid-template-columns: 150px auto;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  div.page-container {
+    grid-template-areas: "header" "nav" "content" "footer";
+    grid-template-columns: auto;
+  }
+}
+
+/* ---------- Header ---------- */
+div.header-container {
+  background-color: #041529;
+  grid-area: header;
+}
+
+div.header-container header {
+  display: flex;
+  height: 10vh;
+  padding-top: 1.5rem;
+  background-color: #041529;
+}
+
+div.header-container header img {
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+/* ---------- Navigation ---------- */
+div.nav-container {
+  background-color: #61CCFE;
+  grid-area: nav;
+  height: 100vh;
+}
+
+@media only screen and (min-width: 35rem) {
+  div.nav-container {
+    height: 100%;
+  }
+}
+
+div.nav-container a.jump {
+  text-decoration: none;
+  color: #121212;
+  font-size: 40px;
+  padding-left: .5rem;
+}
+
+@media only screen and (min-width: 35rem) {
+  div.nav-container a.jump {
+    display: none;
+  }
+}
+
+div.nav-container nav {
+  background-color: #61CCFE;
+}
+
+div.nav-container nav ul {
+  display: block;
+}
+
+@media only screen and (min-width: 64rem) {
+  div.nav-container nav ul {
+    display: flex;
+  }
+}
+
+div.nav-container nav ul li {
+  list-style-type: none;
+  padding: 1rem 1.5rem;
+}
+
+div.nav-container nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #121212;
+}
+
+div.nav-container nav ul li:hover {
+  background-color: #0b396f;
+}
+
+div.nav-container nav ul li:hover a {
+  color: #FFF;
+}
+
+div.nav-container nav ul .active {
+  background-color: #041529;
+}
+
+div.nav-container nav ul .active a {
+  color: #FFF;
+}
+
+/* ---------- Content ---------- */
+div.content-container {
+  grid-area: content;
+}
+
+div.content-container main h1 {
+  margin: 1rem 1rem .5rem 1rem;
+}
+
+@media only screen and (min-width: 35rem) {
+  div.content-container main .tablet-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+div.content-container main .tablet-info p {
+  margin: 0 1rem 1rem 1rem;
+  flex-basis: 50%;
+}
+
+@media only screen and (min-width: 35rem) {
+  div.content-container main .tablet-info p {
+    flex-basis: 65%;
+  }
+}
+
+div.content-container main .tablet-info .paragraph-title {
+  font-size: larger;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+div.content-container main .tablet-info img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  flex-basis: 30%;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 35rem) {
+  div.content-container main .tablet-info img {
+    height: 250px;
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  div.content-container main .tablet-info img {
+    height: 300px;
+    width: 250px;
+  }
+}
+
+/* ---------- Footer ---------- */
+div.footer-container {
+  grid-area: footer;
+  background-color: #041529;
+}
+
+div.footer-container footer {
+  margin-top: 1rem;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #041529;
+  color: #FFF;
+}
+
+/* ---------- Hamburger ---------- */
+div#hamburger {
+  grid-area: hamburger;
+  width: 100%;
+}
+
+div#hamburger a {
+  display: block;
+  background-color: #61CCFE;
+  text-decoration: none;
+  color: #121212;
+  font-size: 45px;
+}
+
+@media only screen and (min-width: 35rem) {
+  div#hamburger .jump {
+    display: none;
+  }
+}
