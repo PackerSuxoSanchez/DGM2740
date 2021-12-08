@@ -1,0 +1,140 @@
+/* ---------- Variables ---------- */
+/* ---------- Universal ---------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+header, nav, main, .content-container, footer {
+  max-width: 64rem;
+  margin: auto;
+}
+
+.page-container {
+  max-width: 64rem;
+  margin: auto;
+}
+
+/* ---------- Header ---------- */
+header {
+  background-color: #F55825;
+  height: 10vh;
+  width: 1000px;
+}
+
+header h1 {
+  margin-left: 1rem;
+  padding-top: 1rem;
+  color: #FFF;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #FF7040;
+  z-index: 999;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  flex-basis: 33.3%;
+  list-style-type: none;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+nav ul li a {
+  display: block;
+  padding-top: 0.5rem;
+  width: 100%;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 3rem;
+}
+
+nav ul li a p {
+  padding-bottom: .5rem;
+  font-size: 1rem;
+}
+
+nav ul li a:hover {
+  background-color: #ff5d27;
+}
+
+nav ul .active {
+  background-color: #d93700;
+}
+
+/* ---------- Content ---------- */
+h2 {
+  padding: 1rem;
+}
+
+main div.inventory-container {
+  margin-bottom: 5rem;
+}
+
+main div.inventory-container section#myCards {
+  margin: 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+main div.inventory-container section#myCards div figure {
+  position: relative;
+  object-fit: contain;
+  width: 24rem;
+}
+
+main div.inventory-container section#myCards div figure img {
+  width: 100%;
+}
+
+main div.inventory-container section#myCards div figure figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 22rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #FFF;
+  padding: 1rem;
+}
+
+main div.inventory-container section#myCards div div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 24rem;
+}
+
+main div.inventory-container section#myCards div div span {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #CCC;
+  height: 75px;
+}
+
+main div.inventory-container section#myCards div div span ion-icon {
+  float: left;
+  font-size: 1.5rem;
+}
+
+main div.inventory-container section#myCards div div span p {
+  padding-left: 2rem;
+}
+
+@media only screen and (min-width: 50rem) {
+  main div.inventory-container section#myCards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ---------- Footer ---------- */

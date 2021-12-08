@@ -1,0 +1,156 @@
+/* ---------- Variables ---------- */
+
+$primary-color: #F55825;
+$secondary-color: #FF7040;
+$tertiary-color: #00A881;
+$dark-color: #A8340D;
+$light-color: #FFF;
+
+/* ---------- Universal ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+header, nav, main, .content-container, footer {
+    max-width: 64rem;
+    margin: auto;
+}
+
+.page-container {
+    max-width: 64rem;
+    margin: auto;
+}
+
+/* ---------- Header ---------- */
+
+header {
+    background-color: $primary-color;
+    height: 10vh;
+    width: 1000px;
+
+    h1 {
+        margin-left: 1rem;
+        padding-top: 1rem;
+        color: $light-color;
+    }
+}
+
+/* ---------- Navigation ---------- */
+
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $secondary-color;
+    z-index: 999;
+
+    ul {
+        display: flex;
+        
+        li {
+            flex-basis: 33.3%;
+            list-style-type: none;
+            color: $light-color;
+            text-transform: uppercase;
+            text-align: center;
+            
+            a {
+                display: block;
+                padding-top: 0.5rem;
+                width: 100%;
+                text-decoration: none;
+                color: $light-color;
+                font-size: 3rem;
+
+                p {
+                    padding-bottom: .5rem;
+                    font-size: 1rem;
+                }
+
+                &:hover {
+                    background-color: darken($secondary-color, 5%);
+                }
+            }
+        }
+
+        .active {
+            background-color: darken($secondary-color, 20%);
+        }
+    }
+}
+
+/* ---------- Content ---------- */
+
+h2 {
+    padding: 1rem;
+}
+
+main {
+
+    div.inventory-container {
+        margin-bottom: 5rem;
+        
+        section#myCards {
+            margin: 0 1rem;
+            display: grid;
+            grid-template-columns: 1fr;
+
+            div {
+
+                figure {
+                    position: relative;
+                    object-fit: contain;
+                    width: 24rem;
+                    
+                    img {
+                        width: 100%;
+                    }
+    
+                    figcaption {
+                        position: absolute;
+                        bottom: 0;
+                        width: 22rem;
+                        background-color: rgba(0,0,0,0.4);
+                        color: $light-color;
+                        padding: 1rem;
+                    }
+                }
+    
+                div {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    width: 24rem;
+    
+                    span {
+                        margin-bottom: 1rem;
+                        padding: 1rem;
+                        background-color: #CCC;
+                        height: 75px;
+    
+                        ion-icon {
+                            float: left;
+                            font-size: 1.5rem;
+                        }
+    
+                        p {
+                            padding-left: 2rem;
+                        }
+                    }
+                }
+            }
+
+            @media only screen and (min-width: 50rem) {
+                grid-template-columns: 1fr 1fr;
+            } 
+        } 
+    }
+}
+
+/* ---------- Footer ---------- */
+
