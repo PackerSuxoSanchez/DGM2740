@@ -1,0 +1,375 @@
+/* ---------- Variables ---------- */
+/* ---------- Universal ---------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+header, hr, nav, .hero-container, section, main, footer {
+  max-width: 64rem;
+  margin: auto;
+}
+
+hr {
+  color: #112033;
+  margin-bottom: .5rem;
+}
+
+/* ---------- Header ---------- */
+div.header-container header img {
+  padding: 1rem 0 1rem 1rem;
+  height: 100px;
+}
+
+@media only screen and (min-width: 64rem) {
+  div.header-container header img {
+    padding-left: 0;
+  }
+}
+
+/* ---------- Navigation ---------- */
+div.nav-container {
+  display: none;
+}
+
+div.nav-container nav {
+  margin-bottom: .5rem;
+}
+
+div.nav-container nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: end;
+}
+
+div.nav-container nav ul li {
+  padding-left: 1rem;
+}
+
+div.nav-container nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #bbbaba;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+div.nav-container nav ul li a i {
+  padding-right: .25rem;
+  color: #A1A1A1;
+}
+
+@media only screen and (min-width: 35rem) {
+  div.nav-container nav {
+    padding-right: 1rem;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  div.nav-container nav {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (min-width: 35rem) {
+  div.nav-container {
+    display: contents;
+  }
+}
+
+/* HAMBURGER NAVIGATION */
+div#hamburger {
+  grid-area: hamburger;
+  width: 100%;
+}
+
+div#hamburger a {
+  display: block;
+  background-color: #7897BF;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 45px;
+}
+
+@media only screen and (min-width: 35rem) {
+  div#hamburger .jump {
+    display: none;
+  }
+}
+
+div.hamburger-nav {
+  height: 100vh;
+  background-color: #7897BF;
+}
+
+div.hamburger-nav a.jump {
+  text-decoration: none;
+  color: #264874;
+  font-size: 40px;
+  padding-left: .5rem;
+}
+
+div.hamburger-nav nav {
+  margin-top: 1rem;
+  display: flex;
+}
+
+div.hamburger-nav nav ul {
+  padding-left: 1rem;
+  list-style-type: none;
+}
+
+div.hamburger-nav nav ul li {
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+
+div.hamburger-nav nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #FFF;
+}
+
+@media only screen and (min-width: 35rem) {
+  div.hamburger-nav {
+    display: none;
+  }
+}
+
+/* ---------- Content ---------- */
+/* HERO IMAGE */
+div.hero-container {
+  max-width: 64rem;
+  margin-bottom: .5rem;
+}
+
+div.hero-container picture img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: 35vh;
+  background-size: contain;
+}
+
+/* FORMULA BANNER */
+div#formula-container {
+  background-color: #000;
+}
+
+div#formula-container section#formula {
+  margin-bottom: 3rem;
+  background-color: #000;
+}
+
+@media only screen and (min-width: 35rem) {
+  div#formula-container section#formula {
+    display: flex;
+  }
+}
+
+div#formula-container section#formula div {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  background-color: #000;
+}
+
+div#formula-container section#formula div h2 {
+  margin-bottom: .5rem;
+  padding-top: 1rem;
+  color: gold;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+div#formula-container section#formula div p {
+  margin-bottom: 1rem;
+  color: #FFF;
+  font-style: italic;
+}
+
+div#formula-container section#formula div ul {
+  padding-left: 5rem;
+}
+
+div#formula-container section#formula div ul li {
+  color: #FFF;
+  padding-bottom: .25rem;
+}
+
+@media only screen and (min-width: 64rem) {
+  div#formula-container section#formula div {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+div#formula-container section#formula div:nth-child(2) {
+  display: block;
+}
+
+div#formula-container section#formula div:nth-child(2) h2 {
+  text-align: right;
+}
+
+div#formula-container section#formula div:nth-child(2) ul {
+  list-style-type: none;
+}
+
+div#formula-container section#formula div:nth-child(2) ul li {
+  text-align: end;
+}
+
+div#formula-container section#formula div:nth-child(2) ul li:nth-child(4) {
+  font-size: 2rem;
+  font-weight: lighter;
+  font-style: italic;
+  text-transform: uppercase;
+  color: gold;
+}
+
+/* MAIN CONTENT */
+main {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+main h2 {
+  font-weight: 500;
+  color: #264874;
+}
+
+main section {
+  margin-bottom: 1rem;
+}
+
+main section img {
+  max-height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 64rem) {
+  main section img {
+    max-height: 155px;
+  }
+}
+
+main section h3 {
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+  color: #264874;
+  font-weight: 400;
+}
+
+main section p {
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 35rem) {
+  main section#more-about-us div.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  main section#more-about-us div.cards div {
+    flex-basis: 49%;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  main section#more-about-us div.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  main section#more-about-us div.cards div {
+    flex-basis: 24%;
+  }
+}
+
+main section#add-info {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-areas: "infra" "tech" "support" "graph";
+}
+
+@media only screen and (min-width: 35rem) {
+  main section#add-info {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "infra tech" "support graph";
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  main section#add-info {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "infra tech graph" "infra tech graph" "support support graph";
+  }
+}
+
+main section#add-info div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main section#add-info div:nth-child(1) {
+  grid-area: infra;
+}
+
+main section#add-info div:nth-child(2) {
+  grid-area: tech;
+}
+
+main section#add-info div:nth-child(3) {
+  grid-area: support;
+}
+
+main section#add-info div:nth-child(4) {
+  grid-area: graph;
+  justify-content: center;
+}
+
+main section#add-info div:nth-child(4) button {
+  margin-top: 1rem;
+  padding: 1.5rem 8rem;
+  background-color: #7897BF;
+  color: #FFF;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 64rem) {
+  main section#add-info div:nth-child(4) img {
+    max-height: 500px;
+  }
+  main section#add-info div:nth-child(4) button {
+    margin-top: 1rem;
+    padding: 0 2rem;
+    max-height: 2rem;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  main {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/* ---------- Footer ---------- */
+div.footer-container {
+  background: linear-gradient(#264874, #13243a);
+}
+
+div.footer-container footer {
+  padding: 1rem 0 1rem 1rem;
+  color: #FFF;
+}

@@ -1,0 +1,407 @@
+/* ---------- Variables ---------- */
+
+$primary-color: #264874;
+$secondary-color: #7897BF;
+$tertiary-color: #BF8519;
+$dark-color: #112033;
+$light-color: #FFF;
+
+/* ---------- Universal ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+header, hr, nav, .hero-container, section, main, footer {
+    max-width: 64rem;
+    margin: auto;
+}
+
+hr {
+    color: $dark-color;
+    margin-bottom: .5rem;
+}
+
+/* ---------- Header ---------- */
+
+div.header-container {
+
+    header {
+
+        img {
+            padding: 1rem 0 1rem 1rem;
+            height: 100px;
+
+            @media only screen and (min-width: 64rem) {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+/* ---------- Navigation ---------- */
+
+div.nav-container {
+    display: none;
+
+    nav {
+        margin-bottom: .5rem;
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            justify-content: end;
+
+            li {
+                padding-left: 1rem;
+            
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: #bbbaba;
+                    font-weight: lighter;
+                    text-transform: uppercase;
+
+                    i {
+                        padding-right: .25rem;
+                        color: #A1A1A1;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (min-width: 35rem) {
+            padding-right: 1rem;
+        }
+
+        @media only screen and (min-width: 64rem) {
+            padding-right: 0;
+        }
+    }
+
+    @media only screen and (min-width: 35rem) {
+        display: contents;
+    }
+}
+
+/* HAMBURGER NAVIGATION */
+
+div#hamburger {
+    grid-area: hamburger;
+    width: 100%;
+
+    a {
+        display: block;
+        background-color: $secondary-color;
+        text-decoration: none;
+        color: $light-color;
+        font-size: 45px;
+    }
+
+    .jump {
+
+        @media only screen and (min-width: 35rem) {
+            display: none;
+        }
+    }
+}
+
+div.hamburger-nav {
+    height: 100vh;
+    background-color: $secondary-color;
+
+    a.jump{
+        text-decoration: none;
+        color: $primary-color;
+        font-size: 40px;
+        padding-left: .5rem;
+    }
+
+    nav {
+        margin-top: 1rem;
+        display: flex;
+        // justify-content: center;
+        // text-align: center;
+        // height: 100vh;
+
+        ul {
+            padding-left: 1rem;
+            list-style-type: none;
+            // align-self: center;
+
+            li {
+                padding-bottom: 1rem;
+                font-size: 2rem;
+
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: $light-color;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 35rem) {
+        display: none;
+    }
+}
+
+/* ---------- Content ---------- */
+
+/* HERO IMAGE */
+
+div.hero-container {
+    max-width: 64rem;
+    margin-bottom: .5rem;
+
+    picture {
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            height: 35vh;
+            background-size: contain;
+        }
+    }
+}
+
+/* FORMULA BANNER */
+
+div#formula-container {
+    background-color: #000;
+
+    section#formula {
+        margin-bottom: 3rem;
+        background-color: #000;
+    
+        @media only screen and (min-width: 35rem) {
+            display: flex;
+        }
+    
+        div {
+            padding-right: 1rem;
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+            background-color: #000;
+    
+            h2 {
+                margin-bottom: .5rem;
+                padding-top: 1rem;
+                color: gold;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+    
+            p {
+                margin-bottom: 1rem;
+                color: $light-color;
+                font-style: italic;
+            }
+    
+            ul {
+                padding-left: 5rem;
+    
+                li {
+                    color: $light-color;
+                    padding-bottom: .25rem;
+                }
+            }
+
+            @media only screen and (min-width: 64rem) {
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+    
+        div:nth-child(2) {
+            display: block;
+    
+            h2 {
+                text-align: right;
+            }
+            
+            ul {
+                list-style-type: none;
+    
+                li {
+                    text-align: end;
+                }
+    
+                li:nth-child(4) {
+                    font-size: 2rem;
+                    font-weight: lighter;
+                    font-style: italic;
+                    text-transform: uppercase;
+                    color: gold;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* MAIN CONTENT */
+
+main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    h2 {
+        font-weight: 500;
+        color: $primary-color;
+    }
+
+    section {
+        margin-bottom: 1rem;
+
+        img {
+            max-height: 200px;
+            width: 100%;
+            object-fit: cover;
+
+            @media only screen and (min-width: 64rem) {
+                max-height: 155px;
+            }
+        }
+
+        h3 {
+            margin-top: .25rem;
+            margin-bottom: .25rem;
+            color: $primary-color;
+            font-weight: 400;
+        }
+
+        p {
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    section#more-about-us {
+
+        @media only screen and (min-width: 35rem) {
+
+            div.cards {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+    
+                div {
+                    flex-basis: 49%;
+                }
+            }
+        }
+
+        @media only screen and (min-width: 64rem) {
+
+            div.cards {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+    
+                div {
+                    flex-basis: 24%;
+                }
+            }
+        }
+    }
+
+    section#add-info {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "infra"
+        "tech"
+        "support"
+        "graph"
+        ;
+
+        @media only screen and (min-width: 35rem) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "infra tech"
+            "support graph"
+            ;
+        }
+
+        @media only screen and (min-width: 64rem) {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "infra tech graph"
+            "infra tech graph"
+            "support support graph"
+            ;
+        }
+
+        div {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        div:nth-child(1) {
+            grid-area: infra;
+        }
+
+        div:nth-child(2) {
+            grid-area: tech;
+        }
+
+        div:nth-child(3) {
+            grid-area: support;
+        }
+
+        div:nth-child(4) {
+            grid-area: graph;
+            justify-content: center;
+
+            button {
+                margin-top: 1rem;
+                padding: 1.5rem 8rem;
+                background-color: $secondary-color;
+                color: $light-color;
+                border: none;
+                border-radius: 10px;
+                text-transform: uppercase;
+            }
+
+            @media only screen and (min-width: 64rem) {
+
+                img {
+                    max-height: 500px;
+                }
+
+                button {
+                    margin-top: 1rem;
+                    padding: 0 2rem;
+                    max-height: 2rem;
+                }
+
+            }
+        }
+    }
+
+    @media only screen and (min-width: 64rem) {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+/* ---------- Footer ---------- */
+
+div.footer-container {
+    background: linear-gradient($primary-color, darken($primary-color, 15%));
+
+    footer {
+        padding: 1rem 0 1rem 1rem;
+        color: $light-color;
+    }
+}
