@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #CCC;
+}
+
+header h1 {
+  text-align: center;
+}
+
+main section {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+main div#weatherforecast {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+main div#weatherforecast div {
+  max-width: 15rem;
+  background-color: #c1d1d4;
+}
+
+main div#weatherforecast div span {
+  display: block;
+  font-weight: bold;
+  background-color: #45bfdd;
+  padding: 1rem;
+  text-align: center;
+}
+
+main div#weatherforecast div p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 35rem) {
+  main div#weatherforecast {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  main div#weatherforecast {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
