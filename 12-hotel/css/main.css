@@ -88,12 +88,17 @@ main div.inventory-container section#myCards {
   margin: 0 1rem;
   display: grid;
   grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+main div.inventory-container section#myCards div {
+  max-width: 20rem;
 }
 
 main div.inventory-container section#myCards div figure {
   position: relative;
   object-fit: contain;
-  width: 24rem;
+  width: 20rem;
 }
 
 main div.inventory-container section#myCards div figure img {
@@ -103,7 +108,7 @@ main div.inventory-container section#myCards div figure img {
 main div.inventory-container section#myCards div figure figcaption {
   position: absolute;
   bottom: 0;
-  width: 22rem;
+  width: 18rem;
   background-color: rgba(0, 0, 0, 0.4);
   color: #FFF;
   padding: 1rem;
@@ -131,7 +136,7 @@ main div.inventory-container section#myCards div div span p {
   padding-left: 2rem;
 }
 
-@media only screen and (min-width: 50rem) {
+@media only screen and (min-width: 34rem) {
   main div.inventory-container section#myCards {
     grid-template-columns: 1fr 1fr;
   }

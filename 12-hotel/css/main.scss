@@ -100,13 +100,15 @@ main {
             margin: 0 1rem;
             display: grid;
             grid-template-columns: 1fr;
+            gap: 1rem;
 
             div {
+                max-width: 20rem;
 
                 figure {
                     position: relative;
                     object-fit: contain;
-                    width: 24rem;
+                    width: 20rem;
                     
                     img {
                         width: 100%;
@@ -115,7 +117,7 @@ main {
                     figcaption {
                         position: absolute;
                         bottom: 0;
-                        width: 22rem;
+                        width: 18rem;
                         background-color: rgba(0,0,0,0.4);
                         color: $light-color;
                         padding: 1rem;
@@ -145,7 +147,7 @@ main {
                 }
             }
 
-            @media only screen and (min-width: 50rem) {
+            @media only screen and (min-width: 34rem) {
                 grid-template-columns: 1fr 1fr;
             } 
         } 
