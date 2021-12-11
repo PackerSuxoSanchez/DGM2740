@@ -9,7 +9,7 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
-header, nav, main, .content-container, footer {
+nav, main, .content-container, footer {
   max-width: 64rem;
   margin: auto;
 }
@@ -20,16 +20,21 @@ header, nav, main, .content-container, footer {
 }
 
 /* ---------- Header ---------- */
-header {
+.header-container {
   background-color: #F55825;
-  height: 10vh;
-  width: 1000px;
+  width: 100%;
 }
 
-header h1 {
+.header-container header {
+  background-color: #F55825;
+}
+
+.header-container header h1 {
   margin-left: 1rem;
   padding-top: 1rem;
+  padding-bottom: 1rem;
   color: #FFF;
+  max-width: 100%;
 }
 
 /* ---------- Navigation ---------- */
@@ -82,23 +87,50 @@ h2 {
 
 main div.inventory-container {
   margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 main div.inventory-container section#myCards {
-  margin: 0 1rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+  /* LANDSCAPE SMALL MOBILE */
+  /* PORTRAIT SMALL MOBILE */
 }
 
 main div.inventory-container section#myCards div {
   max-width: 20rem;
 }
 
+@media only screen and (max-width: 480px) and (max-height: 320px) {
+  main div.inventory-container section#myCards div {
+    max-width: 230px;
+  }
+}
+
+@media only screen and (max-width: 568px) and (max-height: 320px) {
+  main div.inventory-container section#myCards div {
+    max-width: 230px;
+  }
+}
+
 main div.inventory-container section#myCards div figure {
   position: relative;
   object-fit: contain;
   width: 20rem;
+}
+
+@media only screen and (max-width: 480px) and (max-height: 320px) {
+  main div.inventory-container section#myCards div figure {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 568px) and (max-height: 320px) {
+  main div.inventory-container section#myCards div figure {
+    max-width: 100%;
+  }
 }
 
 main div.inventory-container section#myCards div figure img {
@@ -108,16 +140,40 @@ main div.inventory-container section#myCards div figure img {
 main div.inventory-container section#myCards div figure figcaption {
   position: absolute;
   bottom: 0;
-  width: 18rem;
+  width: 288px;
   background-color: rgba(0, 0, 0, 0.4);
   color: #FFF;
   padding: 1rem;
+}
+
+@media only screen and (max-width: 480px) and (max-height: 320px) {
+  main div.inventory-container section#myCards div figure figcaption {
+    width: 198px;
+  }
+}
+
+@media only screen and (max-width: 568px) and (max-height: 320px) {
+  main div.inventory-container section#myCards div figure figcaption {
+    width: 198px;
+  }
 }
 
 main div.inventory-container section#myCards div div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 24rem;
+}
+
+@media only screen and (max-width: 480px) and (max-height: 320px) {
+  main div.inventory-container section#myCards div div {
+    font-size: .75rem;
+  }
+}
+
+@media only screen and (max-width: 568px) and (max-height: 320px) {
+  main div.inventory-container section#myCards div div {
+    font-size: .75rem;
+  }
 }
 
 main div.inventory-container section#myCards div div span {
@@ -136,7 +192,19 @@ main div.inventory-container section#myCards div div span p {
   padding-left: 2rem;
 }
 
-@media only screen and (min-width: 30rem) {
+@media only screen and (max-width: 480px) and (max-height: 320px) {
+  main div.inventory-container section#myCards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 568px) and (max-height: 320px) {
+  main div.inventory-container section#myCards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 660px) and (min-height: 321px) {
   main div.inventory-container section#myCards {
     grid-template-columns: 1fr 1fr;
   }
