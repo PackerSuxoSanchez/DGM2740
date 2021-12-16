@@ -1,0 +1,104 @@
+/* ---------- Variables ---------- */
+
+$primary-color: #00533D;
+$secondary-color: #FBFAF8;
+$tertiary-color: #00A176;
+$dark-color: #000000;
+$light-color: #FBFAF8;
+
+/* ---------- Content ---------- */
+
+.hero-container {
+
+    picture {
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: 50% 67%;
+            height: 20vh;
+            background-size: contain;
+        }
+    }
+}
+
+.main-container {
+
+    main {
+
+        form {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+
+            fieldset{
+                margin: .5rem;
+                padding: 1rem;
+                border: 1px solid $primary-color;
+                border-radius: 5px;
+
+                legend {
+                    margin: 0 1rem;
+                    padding: 0 .5rem;
+                    font-weight: bold;
+                    color: $tertiary-color;
+                }
+
+                label {
+                    display: block;
+                    padding-bottom: 1rem;
+                    font-size: .75rem;
+                }
+
+                textarea {
+                    width: 75%;
+                    display: block;
+                    padding: .75rem;
+                    border: 1px solid $secondary-color;
+                    border-radius: 5px;
+                    background-color: $light-color;
+                    font-family: 'Spartan', sans-serif;
+
+                    @media only screen and (min-width: 40rem) {
+                        width: 360px;
+                    }
+                }
+            }
+
+            input {
+                width: 75%;
+                display: block;
+                padding: .75rem;
+                border: 1px solid $secondary-color;
+                border-radius: 5px;
+                background-color: $light-color;
+
+                &:required {
+                    border: red solid 2px;
+                }
+
+                &:required:valid {
+                    border: green solid 2px;
+                }
+
+                @media only screen and (min-width: 40rem) {
+                    width: 360px;
+                }
+            }
+
+            input.submitBtn {
+                width: 100%;
+                padding: 10px 50px;
+                border: none;
+                border-radius: 10px;
+                background-color: $primary-color;
+                color: $light-color;
+                cursor: pointer;
+
+                @media only screen and (min-width: 40rem) {
+                    margin-left: 1.5rem;
+                    width: 360px;
+                }
+            }
+        }
+    }
+}

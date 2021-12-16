@@ -1,0 +1,35 @@
+/* ---------- Variables ---------- */
+
+$primary-color: #00533D;
+$secondary-color: #FBFAF8;
+$tertiary-color: #00A176;
+$dark-color: #000000;
+$light-color: #FBFAF8;
+
+/* ---------- Content ---------- */
+
+.hero-container {
+
+    picture {
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: 50% 65%;
+            height: 20vh;
+            background-size: contain;
+        }
+    }
+}
+
+.main-container {
+
+    main {
+
+        h1 {
+            margin-top: 15rem;
+            margin-bottom: 25rem;
+            text-align: center;
+        }
+    }
+}

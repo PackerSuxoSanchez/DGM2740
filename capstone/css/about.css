@@ -1,0 +1,139 @@
+/* ---------- Variables ---------- */
+/* ---------- Content ---------- */
+.hero-container picture img {
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 40%;
+  height: 20vh;
+  background-size: contain;
+}
+
+.main-container main section {
+  margin-bottom: 3rem;
+}
+
+.main-container main ul {
+  padding-left: 2rem;
+}
+
+.main-container main ul li {
+  padding-bottom: .25rem;
+}
+
+.main-container main section.profile {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "abth1" "pg1" "pg2" "pg3" "abtul" "ppl";
+  gap: 1.5rem;
+}
+
+.main-container main section.profile h1 {
+  grid-area: abth1;
+}
+
+.main-container main section.profile p:nth-child(1) {
+  grid-area: pg1;
+}
+
+.main-container main section.profile p:nth-child(2) {
+  grid-area: pg2;
+}
+
+.main-container main section.profile ul {
+  grid-area: abtul;
+}
+
+.main-container main section.profile p:nth-child(3) {
+  grid-area: pg3;
+}
+
+.main-container main section.profile .firm-people {
+  grid-area: ppl;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "pic1 pic2" "pic3 pic4";
+  gap: 2rem;
+}
+
+.main-container main section.profile .firm-people figure {
+  text-align: center;
+}
+
+.main-container main section.profile .firm-people figure img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.main-container main section.profile .firm-people figure figcaption {
+  font-size: small;
+}
+
+.main-container main section.profile .firm-people figure:nth-child(1) {
+  grid-area: pic1;
+}
+
+.main-container main section.profile .firm-people figure:nth-child(2) {
+  grid-area: pic2;
+}
+
+.main-container main section.profile .firm-people figure:nth-child(3) {
+  grid-area: pic3;
+}
+
+.main-container main section.profile .firm-people figure:nth-child(4) {
+  grid-area: pic4;
+}
+
+@media only screen and (min-width: 45rem) {
+  .main-container main section.profile {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "abth1 abth1" "pg2 ppl" "pg3 ppl" "abtul ppl" "pg1 ppl";
+  }
+}
+
+.main-container main section.services {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "h2" "p1" "ul1" "ul2" "dsrt";
+  gap: 1rem;
+}
+
+.main-container main section.services h2 {
+  grid-area: h2;
+}
+
+.main-container main section.services p {
+  grid-area: p1;
+}
+
+.main-container main section.services ul:nth-child(1) {
+  grid-area: ul1;
+}
+
+.main-container main section.services ul:nth-child(2) {
+  grid-area: ul2;
+}
+
+.main-container main section.services img {
+  grid-area: dsrt;
+  width: 100%;
+  object-fit: cover;
+  height: 45vh;
+  background-size: contain;
+}
+
+@media only screen and (min-width: 32rem) {
+  .main-container main section.services {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "h2 h2" "p1 p1" "ul1 ul2" "dsrt dsrt";
+  }
+}
+
+@media only screen and (min-width: 45rem) {
+  .main-container main section.services {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "h2 h2 h2" "p1 p1 dsrt" "ul1 ul2 dsrt";
+  }
+}

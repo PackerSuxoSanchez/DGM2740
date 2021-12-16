@@ -1,0 +1,70 @@
+/* ---------- Variables ---------- */
+
+$primary-color: #00533D;
+$secondary-color: #FBFAF8;
+$tertiary-color: #00A176;
+$dark-color: #000000;
+$light-color: #FBFAF8;
+
+/* ---------- Content ---------- */
+
+.hero-container {
+
+    picture {
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: 50% 75%;
+            height: 20vh;
+            background-size: contain;
+        }
+    }
+}
+
+.main-container {
+    
+    main {
+
+        .tool-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 162px;
+
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: $dark-color;
+                    cursor: pointer;
+                }
+            }
+
+            div:nth-last-of-type(1n) {
+                background-color: $tertiary-color;
+
+                &:hover {
+                    background-color: darken($tertiary-color, 5%);
+                }
+            }
+
+            div:nth-of-type(2n) {
+                background-color: $secondary-color;
+
+                &:hover {
+                    background-color: darken($secondary-color, 15%);
+                }
+            }
+
+            @media only screen and (min-width: 40rem) {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+    }
+}

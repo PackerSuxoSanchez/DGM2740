@@ -1,0 +1,90 @@
+/* ---------- Variables ---------- */
+/* ---------- Content ---------- */
+.hero-container picture img {
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 67%;
+  height: 20vh;
+  background-size: contain;
+}
+
+.main-container main form {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.main-container main form fieldset {
+  margin: .5rem;
+  padding: 1rem;
+  border: 1px solid #00533D;
+  border-radius: 5px;
+}
+
+.main-container main form fieldset legend {
+  margin: 0 1rem;
+  padding: 0 .5rem;
+  font-weight: bold;
+  color: #00A176;
+}
+
+.main-container main form fieldset label {
+  display: block;
+  padding-bottom: 1rem;
+  font-size: .75rem;
+}
+
+.main-container main form fieldset textarea {
+  width: 75%;
+  display: block;
+  padding: .75rem;
+  border: 1px solid #FBFAF8;
+  border-radius: 5px;
+  background-color: #FBFAF8;
+  font-family: 'Spartan', sans-serif;
+}
+
+@media only screen and (min-width: 40rem) {
+  .main-container main form fieldset textarea {
+    width: 360px;
+  }
+}
+
+.main-container main form input {
+  width: 75%;
+  display: block;
+  padding: .75rem;
+  border: 1px solid #FBFAF8;
+  border-radius: 5px;
+  background-color: #FBFAF8;
+}
+
+.main-container main form input:required {
+  border: red solid 2px;
+}
+
+.main-container main form input:required:valid {
+  border: green solid 2px;
+}
+
+@media only screen and (min-width: 40rem) {
+  .main-container main form input {
+    width: 360px;
+  }
+}
+
+.main-container main form input.submitBtn {
+  width: 100%;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: #00533D;
+  color: #FBFAF8;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 40rem) {
+  .main-container main form input.submitBtn {
+    margin-left: 1.5rem;
+    width: 360px;
+  }
+}

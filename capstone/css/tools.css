@@ -1,0 +1,52 @@
+/* ---------- Variables ---------- */
+/* ---------- Content ---------- */
+.hero-container picture img {
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 75%;
+  height: 20vh;
+  background-size: contain;
+}
+
+.main-container main .tool-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.main-container main .tool-cards div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 162px;
+}
+
+.main-container main .tool-cards div a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+.main-container main .tool-cards div:nth-last-of-type(1n) {
+  background-color: #00A176;
+}
+
+.main-container main .tool-cards div:nth-last-of-type(1n):hover {
+  background-color: #008863;
+}
+
+.main-container main .tool-cards div:nth-of-type(2n) {
+  background-color: #FBFAF8;
+}
+
+.main-container main .tool-cards div:nth-of-type(2n):hover {
+  background-color: #dfd7c7;
+}
+
+@media only screen and (min-width: 40rem) {
+  .main-container main .tool-cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

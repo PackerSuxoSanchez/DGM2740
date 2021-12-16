@@ -1,0 +1,184 @@
+/* ---------- Variables ---------- */
+
+$primary-color: #00533D;
+$secondary-color: #FBFAF8;
+$tertiary-color: #00A176;
+$dark-color: #000000;
+$light-color: #FBFAF8;
+
+/* ---------- Content ---------- */
+
+.hero-container {
+
+    picture {
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: 50% 40%;
+            height: 20vh;
+            background-size: contain;
+        }
+    }
+}
+
+.main-container {
+
+    main {
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        ul {
+            padding-left: 2rem;
+
+            li {
+                padding-bottom: .25rem;
+            }
+        }
+
+        section.profile {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "abth1"
+            "pg1"
+            "pg2"
+            "pg3"
+            "abtul"
+            "ppl"
+            ;
+            gap: 1.5rem;
+
+            h1 {
+                grid-area: abth1;
+            }
+
+            p:nth-child(1) {
+                grid-area: pg1;
+            }
+
+            p:nth-child(2) {
+                grid-area: pg2;
+            }
+
+            ul {
+                grid-area: abtul;
+            }
+
+            p:nth-child(3) {
+                grid-area: pg3;
+            }
+
+            .firm-people {
+                grid-area: ppl;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                "pic1 pic2"
+                "pic3 pic4"
+                ;
+                gap: 2rem;
+
+                figure {
+                    text-align: center;
+
+                    img {
+                        height: 150px;
+                        width: 150px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    figcaption {
+                        font-size: small;
+                    }
+                }
+
+                figure:nth-child(1) {
+                    grid-area: pic1;
+                }
+
+                figure:nth-child(2) {
+                    grid-area: pic2;
+                }
+
+                figure:nth-child(3) {
+                    grid-area: pic3;
+                }
+
+                figure:nth-child(4) {
+                    grid-area: pic4;
+                }
+            }
+
+            @media only screen and (min-width: 45rem) {
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                "abth1 abth1"
+                "pg2 ppl"
+                "pg3 ppl"
+                "abtul ppl"
+                "pg1 ppl"
+                ;
+            }
+        }
+
+        section.services {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "h2"
+            "p1"
+            "ul1"
+            "ul2"
+            "dsrt"
+            ;
+            gap: 1rem;
+
+            h2 {
+                grid-area: h2;
+            }
+
+            p {
+                grid-area: p1;
+            }
+
+            ul:nth-child(1) {
+                grid-area: ul1;
+            }
+
+            ul:nth-child(2) {
+                grid-area: ul2;
+            }
+
+            img {
+                grid-area: dsrt;
+                width: 100%;
+                object-fit: cover;
+                height: 45vh;
+                background-size: contain;
+            }
+
+            @media only screen and (min-width: 32rem) {
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                "h2 h2"
+                "p1 p1"
+                "ul1 ul2"
+                "dsrt dsrt"
+                ;
+            }
+
+            @media only screen and (min-width: 45rem) {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas:
+                "h2 h2 h2"
+                "p1 p1 dsrt"
+                "ul1 ul2 dsrt"
+                ;
+            }
+        }
+    }
+}
