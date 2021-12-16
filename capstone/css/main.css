@@ -435,7 +435,7 @@ div.hamburger-nav nav ul li a {
   color: #000000;
 }
 
-@media only screen and (min-width: 40rem) {
+@media only screen and (min-width: 49rem) {
   div.hamburger-nav {
     display: none;
   }
