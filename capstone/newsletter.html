@@ -39,8 +39,8 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
-                <nav class="mobile-nav">
-                    <a href="#"><i class="fas fa-bars"></i></a>
+                <nav class="mobile-nav" id="hamburger">
+                    <a href="#links"><i class="fas fa-bars"></i></a>
                 </nav>
             </div>
         </div>
@@ -53,8 +53,16 @@
     </div>
     <div class="main-container">
         <main>
-            <h1>Come back later for more!</h1>
-            
+            <h1>Newsletter Landscapes</h1>
+            <div class="landscapes">
+                <figure><img alt="Utah" class="lazy" data-src="images/utah-1.jpg"></figure>
+                <figure><img alt="Utah" class="lazy" data-src="images/utah-2.jpg"></figure>
+                <figure><img alt="Utah" class="lazy" data-src="images/utah-3.jpg"></figure>
+                <figure><img alt="Utah" class="lazy" data-src="images/utah-4.jpg"></figure>
+                <figure><img alt="Utah" class="lazy" data-src="images/utah-5.jpg"></figure>
+                <figure><img alt="Utah" class="lazy" data-src="images/utah-6.jpg"></figure>
+                <figure><img alt="Utah" class="lazy" data-src="images/utah-7.jpg"></figure>
+            </div>
         </main>
     </div>
     <div class="footer-container">
@@ -91,5 +99,25 @@
             </div>
         </footer>
     </div>
+    <div class="hamburger-nav" id="links">
+        <a class="jump" href="#hamburger"><i class="fas fa-times"></i></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.5.0/dist/lazyload.min.js"></script>
+    <script>
+        var lazyLoadInstance = new LazyLoad({
+        // Your custom settings go here
+        elements_selector: ".lazy",
+        threshold: 0
+        });
+    </script>
 </body>
 </html>

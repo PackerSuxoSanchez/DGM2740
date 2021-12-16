@@ -146,11 +146,58 @@ button {
     }
 }
 
+div.hamburger-nav {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas:
+    "x"
+    "mn"
+    ;
+
+    a.jump {
+        grid-area: x;
+        height: 50px;
+
+        i {
+            color: $primary-color;
+            font-size: larger;
+            margin: 1rem;
+            float: right;
+        }
+    }
+
+    nav {
+        grid-area: mn;
+
+        ul {
+            display: grid;
+            list-style-type: none;
+
+            li {
+                margin: auto;
+                padding-bottom: 4rem;
+
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: $dark-color;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 40rem) {
+        display: none;
+    }
+}
+
 /* ---------- Content ---------- */
 
 .hero-container {
     
-    picture {
+    div {
 
         img {
             width: 100%;

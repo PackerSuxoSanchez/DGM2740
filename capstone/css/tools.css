@@ -13,6 +13,21 @@
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   margin-bottom: 3rem;
+  /* div:nth-last-of-type(1n) {
+                background-color: $tertiary-color;
+
+                &:hover {
+                    background-color: darken($tertiary-color, 5%);
+                }
+            }
+
+            div:nth-of-type(2n) {
+                background-color: $secondary-color;
+
+                &:hover {
+                    background-color: darken($secondary-color, 15%);
+                }
+            } */
 }
 
 .main-container main .tool-cards div {
@@ -20,6 +35,7 @@
   justify-content: center;
   align-items: center;
   height: 162px;
+  background-position: center;
 }
 
 .main-container main .tool-cards div a {
@@ -27,22 +43,51 @@
   text-decoration: none;
   color: #000000;
   cursor: pointer;
+  text-shadow: 0 0 0.5px #000000;
 }
 
-.main-container main .tool-cards div:nth-last-of-type(1n) {
-  background-color: #00A176;
+.main-container main .tool-cards div:nth-child(1) {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(87, 109, 85, 0.73)), url("../images/auto.jpg");
 }
 
-.main-container main .tool-cards div:nth-last-of-type(1n):hover {
-  background-color: #008863;
+.main-container main .tool-cards div:nth-child(2) {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(87, 109, 85, 0.73)), url("../images/business.jpg");
 }
 
-.main-container main .tool-cards div:nth-of-type(2n) {
-  background-color: #FBFAF8;
+.main-container main .tool-cards div:nth-child(3) {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(87, 109, 85, 0.73)), url("../images/credit-card.jpg");
 }
 
-.main-container main .tool-cards div:nth-of-type(2n):hover {
-  background-color: #dfd7c7;
+.main-container main .tool-cards div:nth-child(4) {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(87, 109, 85, 0.73)), url("../images/insurance.jpg");
+}
+
+.main-container main .tool-cards div:nth-child(5) {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(87, 109, 85, 0.73)), url("../images/investment.jpg");
+}
+
+.main-container main .tool-cards div:nth-child(6) {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(87, 109, 85, 0.73)), url("../images/loan.jpg");
+}
+
+.main-container main .tool-cards div:nth-child(7) {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(87, 109, 85, 0.73)), url("../images/mortgage.jpg");
+}
+
+.main-container main .tool-cards div:nth-child(8) {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(87, 109, 85, 0.73)), url("../images/finance.jpg");
+}
+
+.main-container main .tool-cards div:nth-child(9) {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(87, 109, 85, 0.73)), url("../images/retirement.jpg");
+}
+
+.main-container main .tool-cards div:nth-child(10) {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(87, 109, 85, 0.73)), url("../images/savings.jpg");
+}
+
+.main-container main .tool-cards div:nth-child(11) {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(87, 109, 85, 0.73)), url("../images/tax.jpg");
 }
 
 @media only screen and (min-width: 40rem) {

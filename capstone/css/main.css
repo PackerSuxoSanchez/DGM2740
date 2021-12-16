@@ -130,8 +130,54 @@ button {
   }
 }
 
+div.hamburger-nav {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas: "x" "mn";
+}
+
+div.hamburger-nav a.jump {
+  grid-area: x;
+  height: 50px;
+}
+
+div.hamburger-nav a.jump i {
+  color: #00533D;
+  font-size: larger;
+  margin: 1rem;
+  float: right;
+}
+
+div.hamburger-nav nav {
+  grid-area: mn;
+}
+
+div.hamburger-nav nav ul {
+  display: grid;
+  list-style-type: none;
+}
+
+div.hamburger-nav nav ul li {
+  margin: auto;
+  padding-bottom: 4rem;
+}
+
+div.hamburger-nav nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+
+@media only screen and (min-width: 40rem) {
+  div.hamburger-nav {
+    display: none;
+  }
+}
+
 /* ---------- Content ---------- */
-.hero-container picture img {
+.hero-container div img {
   width: 100%;
   object-fit: cover;
   object-position: 50% 25%;

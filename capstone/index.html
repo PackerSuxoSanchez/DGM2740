@@ -16,7 +16,10 @@
             <div class="header-container">
                 <header>
                     <figure>
-                        <img src="images/wta-logo.jpeg" alt="Wasatch Tax & Accounting Inc. Logo" srcset="">
+                        <img src="images/wta-logo.jpeg" alt="Wasatch Tax & Accounting Inc. Logo" 
+                        srcset="images/logo1.png 1x,
+                        images/logo2.png 2x,
+                        images/logo3.png 3x">
                     </figure>
                 </header>
             </div>
@@ -38,17 +41,22 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
-                <nav class="mobile-nav">
-                    <a href="#"><i class="fas fa-bars"></i></a>
+                <nav class="mobile-nav" id="hamburger">
+                    <a href="#links"><i class="fas fa-bars"></i></a>
                 </nav>
             </div>
         </div>
     </div>
     <div class="hero-container">
-        <picture>
-            <source>
+        <div>
             <img src="images/home-hero.jpg" alt="Snowy Wasatch Mountains">
-        </picture>
+        </div>
+        <!-- <div>
+            <img src="images/home-hero-2.jpg" alt="Snowy Wasatch Mountains">
+        </div>
+        <div>
+            <img src="images/home-hero-3.jpg" alt="Snowy Wasatch Mountains">
+        </div> -->
     </div>
     <div class="main-container">
         <main>
@@ -126,6 +134,18 @@
                 </ul>
             </div>
         </footer>
+    </div>
+    <div class="hamburger-nav" id="links">
+        <a class="jump" href="#hamburger"><i class="fas fa-times"></i></a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </div>
 </body>
 </html>
