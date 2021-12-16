@@ -51,12 +51,12 @@
         <div>
             <img src="images/home-hero.jpg" alt="Snowy Wasatch Mountains">
         </div>
-        <!-- <div>
+        <div>
             <img src="images/home-hero-2.jpg" alt="Snowy Wasatch Mountains">
         </div>
         <div>
             <img src="images/home-hero-3.jpg" alt="Snowy Wasatch Mountains">
-        </div> -->
+        </div>
     </div>
     <div class="main-container">
         <main>
@@ -147,5 +147,21 @@
             </ul>
         </nav>
     </div>
+    <script src="scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.hero-container').slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 1000,
+                cssEase: 'ease-out',
+                autoplay: true,
+                autoplaySpeed: 30000
+            })
+        })
+    </script>
 </body>
 </html>
