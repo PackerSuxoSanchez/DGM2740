@@ -88,6 +88,35 @@ button {
 
                 &:hover {
                     background-color: darken($secondary-color, 10%);
+
+                    /* Dropdown Navigation */
+                    ul {
+                        visibility: visible;
+                        opacity: 1;
+                        display: block;
+                    }
+                }
+
+                /* Dropdown Navigation */
+                ul {
+                    background: $secondary-color;
+                    visibility: hidden;
+                    opacity: 0;
+                    min-width: 5rem;
+                    position: absolute;
+                    transition: all 0.5s ease;
+                    display: none;
+
+                    &:hover {
+                        visibility: visible;
+                        opacity: 1;
+                        display: block;
+                    }
+
+                    li {
+                        clear: both;
+                        width: 100%;
+                    }
                 }
             }
 

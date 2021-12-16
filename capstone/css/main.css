@@ -62,6 +62,10 @@ button {
   list-style-type: none;
 }
 
+.nav-container nav.normal-nav ul li {
+  /* Dropdown Navigation */
+}
+
 .nav-container nav.normal-nav ul li a {
   display: block;
   padding: 40px 20px;
@@ -71,6 +75,34 @@ button {
 
 .nav-container nav.normal-nav ul li:hover {
   background-color: #e8e3d8;
+  /* Dropdown Navigation */
+}
+
+.nav-container nav.normal-nav ul li:hover ul {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.nav-container nav.normal-nav ul li ul {
+  background: #FBFAF8;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  display: none;
+}
+
+.nav-container nav.normal-nav ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.nav-container nav.normal-nav ul li ul li {
+  clear: both;
+  width: 100%;
 }
 
 .nav-container nav.normal-nav ul .active {
